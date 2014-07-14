@@ -10,7 +10,7 @@ Viewer for 3D/4D data and Pk modelling
 ![alt text](screenshots/1.png "Example 1")
 
 
-2) Load image volume by either clicking the load image volume icon or File -> Load Image Volume :
+2) Load image volume by either clicking the load image volume icon or File -> Load Image Volume. Click "use voxel scaling" to use header information :
 
 ![alt text](screenshots/2.png "Example 1")
 
