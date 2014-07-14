@@ -7,7 +7,7 @@ Viewer for 3D/4D data and Pk modelling
 ### Usage
 
 Start Viewer:
-![alt text](screenshots/1.png = 250x "Example 1")
+![alt text](screenshots/1.png =100x "Example 1")
 
 
 Load image volume by either clicking the load image volume icon or File -> Load Image Volume :
