@@ -1,4 +1,4 @@
-PkView
+PkView (build 0.1)
 ======
 
 Viewer for 3D/4D data and Pk modelling
