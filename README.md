@@ -3,10 +3,22 @@ PkView
 
 Viewer for 3D/4D data and Pk modelling
 
+Disclaimer:
+This software has been developed for research purposes only, and should not be 
+used as a diagnostic tool. In no event shall the authors or distributors be liable to 
+any direct, indirect, special, incidental, or consequential damages arising of the use 
+of this software, its documentation, or any derivatives thereof, even if the authors 
+have been advised of the possibility of such damage.
 
 ### Running the binary
 
 #### Linux
+Some additional packages need to be installed before running the binary. To install these packages:
+
+```bash
+sudo apt-get install liblapack3gf python-pyside
+```
+
 
 ### Usage
 
