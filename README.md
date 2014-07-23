@@ -4,6 +4,10 @@ PkView
 Viewer for 3D/4D data and Pk modelling
 
 
+### Running the binary
+
+#### Linux
+
 ### Usage
 
 1) Start Viewer:
