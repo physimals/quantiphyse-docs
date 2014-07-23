@@ -17,7 +17,7 @@ Please acknowledge this software in any publication that uses results or figures
 
 ### Running the binary
 
-#### Linux
+#### Ubuntu 12.04
 Some additional packages need to be installed before running the binary. To install these packages:
 
 ```bash
