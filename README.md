@@ -4,10 +4,13 @@ PkView
 Viewer for 3D/4D data and Pk modelling
 
 Disclaimer:
+
 This software has been developed for research purposes only, and should not be 
 used as a diagnostic tool. The authors or distributors will not be responsible for 
 any direct, indirect, special, incidental, or consequential damages arising of the use 
 of this software.
+
+The current intention of this software is for used by members of IBME, University of Oxford users only and must not be distributed without the explicity consent of the authors
 
 ### Running the binary
 
