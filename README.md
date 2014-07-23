@@ -21,7 +21,7 @@ Please acknowledge this software in any publication that uses results or figures
 Some additional packages need to be installed before running the binary. To install these packages:
 
 ```bash
-sudo apt-get install liblapack3gf python-pyside
+sudo apt-get install liblapack3gf python-pyside libpyside1.1
 ```
 
 change permissions to allow running of executables
