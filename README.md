@@ -24,6 +24,11 @@ chmod +x run_PKview.sh
 chmod +x exe.linux-x86_64-2.7/PkView2
 ```
 
+Run software from the terminal using
+```bash
+./run_Pkview.sh
+```
+
 ### Usage
 
 1) Start Viewer:
