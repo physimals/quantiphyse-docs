@@ -20,20 +20,17 @@ Please acknowledge this software in any publication that uses results or figures
 #### Ubuntu 12.04
 Some additional packages need to be installed before running the binary. To install these packages:
 
+Make sure these packages are installed
+
 ```bash
-sudo apt-get install liblapack3gf python-pyside libpyside1.1
+sudo apt-get install liblapack3gf python-pyside libatlas3gf-base
 ```
 
-change permissions to allow running of executables
+cd into the folder
 ```bash
-chmod +x run_PKview.sh
-chmod +x exe.linux-x86_64-2.7/PkView2
+./pkviewer2
 ```
 
-Run software from the terminal using
-```bash
-./run_Pkview.sh
-```
 
 ### Usage
 
