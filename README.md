@@ -21,99 +21,80 @@ Executables are available for Ubuntu, Windows and OSx.
 
 ## Basic Usage
 
-todo..
+#### Load 4D volume
+
+PKView loads images, rois and overlays from nifti files. 
+
+Either: 
+
+1) Drag and drop a 4D nifti file onto the viewer
+
+or
+
+2) File -> Load 
+
+![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/1.png)
+
+When dragging and dropping, a window will pop up to specify whether the image is a 4D volume, ROI or overlay. 
+
+![Image 2](/Users/benjamin/Code/PkView_help_files/screenshots/2.jpg)
+
+The image will appear in the 3 views. 
+Options
+- Zoom using the **right mouse button**
+- **Left mouse button** click a point
+- **scroll** using the mouse wheel
+- Options allow scaling based on the voxel size
+
+![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/3.png)
+
+#### Load ROI and overlays
+
+Drag-and-drop or load overlays in a similar way.
+
+For overlays specify the overlay type or a generic type (as show below)
+
+![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/4.jpg)
+
+Switch between loaded or generated overlays from the *current overlays* section of the **Volumes** widget. 
+
+![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/5.png)
 
 
-## Voxel analysis
+## Voxel analysis widget
 
-todo...
+![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/6.png)
 
-## Overlay management
-todo...
-
-## Overlay options
-todo...
-
-## Curve clustering
-todo...
-
-## Overlay clustering
-todo...
-
-## PK modelling
-todo...
-
-## Visualiation of model fit
-todo...
+![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/7.png)
 
 
+## Overlay options widget
 
-Previous explanations (old)
+![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/9.png)
+
+
+## Curve clustering widget
+
+![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/10.png)
+
+
+## Overlay clustering widget
+
+![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/13.png)
+
+![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/12.png)
 
 
 
-1) Start Viewer:
-![alt text](screenshots/1.png "Example 1")
+## PK modelling widget
+
+![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/15.png)
 
 
-2) Load image volume by either clicking the load image volume icon or File -> Load Image Volume. Click "use voxel scaling" to use header information :
+## Visualisation of model fit widget
 
-![alt text](screenshots/2.png "Example 1")
+![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/14.png)
 
-3) Zoom into any image by scrolling the mouse wheel over an image. Move through the volume using the navigation sliders :
-
-![alt text](screenshots/3.png "Example 1")
-
-
-4) Load ROI using the Load ROI button:
-
-![alt text](screenshots/4.png "Example 1")
-
-5) and select file:
-
-![alt text](screenshots/5.png "Example 1")
-
-6) Toggle between ROI and ROI outline using "Image and ROI options":
-
-![alt text](screenshots/6.png "Example 1")
-![alt text](screenshots/7.png "Example 1")
-
-
-7) Load a T10 map (currently doesn't create it's own T10 maps) using File -> Load Overlay Select:
-
-![alt text](screenshots/8.png "Example 1")
-
-
-8) Adjust image contrast by moving the greyscale range on the right hand side:
-
-![alt text](screenshots/9.png "Example 1")
-
-9) Change overlay transparency under the "Color Overlay" tab:
-
-![alt text](screenshots/10.png "Example 1")
-
-10) The "Voxel Anlysis tab" allows a number of enhancement curves to be analysed at once. Note that this only works for one axial slice at a time (Axis 1):
-
-![alt text](screenshots/11.png "Example 1")
-
-11) Once a DCE-MRI image, ROI, and T10 map has been loaded, Pk modelling can be run on the data inside the ROI. Note that this is run on a separate processor and the GUI can still be used for other interaction while PK modelling is running. Modelling can take a long time. 
-
-![alt text](screenshots/12.png "Example 1")
-
-12) Once Pk modelling is completed, new overlay will appear in the "Available Overlays" using the "Color overlay" tab. Toggle between them to view. Statistics and histograms can also be generated using the "Generate" buttons in this tab. 
-
-![alt text](screenshots/14.png "Example 1")
-
-
-13) Heat maps can be changed:
-
-![alt text](screenshots/15.png "Example 1")
-
-14) After Pk modelling, a comparison tool can be opened under: Widgets -> PharmaViewCompare . This plots the original data (red) and Pk model fitted curve (green) for any point clicked. 
-
-![alt text](screenshots/17.png "Example 1")
-
-Enjoy
 
 
 
