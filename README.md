@@ -33,11 +33,11 @@ or
 
 2) File -> Load 
 
-![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/1.png)
+![Image 1](screenshots/1.png)
 
 When dragging and dropping, a window will pop up to specify whether the image is a 4D volume, ROI or overlay. 
 
-![Image 2](/Users/benjamin/Code/PkView_help_files/screenshots/2.jpg)
+![Image 2](screenshots/2.jpg)
 
 The image will appear in the 3 views. 
 Options
@@ -46,7 +46,7 @@ Options
 - **scroll** using the mouse wheel
 - Options allow scaling based on the voxel size
 
-![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/3.png)
+![Image 1](screenshots/3.png)
 
 #### Load ROI and overlays
 
@@ -54,46 +54,46 @@ Drag-and-drop or load overlays in a similar way.
 
 For overlays specify the overlay type or a generic type (as show below)
 
-![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/4.jpg)
+![Image 1](screenshots/4.jpg)
 
 Switch between loaded or generated overlays from the *current overlays* section of the **Volumes** widget. 
 
-![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/5.png)
+![Image 1](screenshots/5.png)
 
 
 ## Voxel analysis widget
 
-![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/6.png)
+![Image 1](screenshots/6.png)
 
-![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/7.png)
+![Image 1](screenshots/7.png)
 
 
 ## Overlay options widget
 
-![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/9.png)
+![Image 1](screenshots/9.png)
 
 
 ## Curve clustering widget
 
-![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/10.png)
+![Image 1](screenshots/10.png)
 
 
 ## Overlay clustering widget
 
-![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/13.png)
+![Image 1](screenshots/13.png)
 
-![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/12.png)
+![Image 1](screenshots/12.png)
 
 
 
 ## PK modelling widget
 
-![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/15.png)
+![Image 1](screenshots/15.png)
 
 
 ## Visualisation of model fit widget
 
-![Image 1](/Users/benjamin/Code/PkView_help_files/screenshots/14.png)
+![Image 1](screenshots/14.png)
 
 
 
