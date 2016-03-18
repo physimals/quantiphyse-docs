@@ -141,4 +141,6 @@ Switch between loaded or generated overlays from the *current overlays* section 
 
 ![Image 1](screenshots/14.png)
 
+$$ x^2 $$
+
 Images copyright 2016 Benjamin Irving
