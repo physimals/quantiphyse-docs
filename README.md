@@ -1,5 +1,7 @@
 # PkView 
 
+[Link to formatted documentation](http://pkview.readthedocs.org/en/latest/)
+
 (build 0.2)
 
 Viewer for 3D and 4D functional data and Pharmacokinetic modelling
