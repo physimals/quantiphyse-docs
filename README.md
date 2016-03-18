@@ -71,6 +71,19 @@ Switch between loaded or generated overlays from the *current overlays* section 
 - These points only appear on the axial slice and need to be cleared before changing clear. 
 - Points can be cleared with X
 
+## Saving images
+
+#### Save a screen shot or plot
+- Right click on an image or plot
+- Click *Export*
+- A view box will appear with the various format options. 
+- *svg* format will allow editing of the layers and nodes in inkscape or another vector graphics viewer. 
+
+![Image 1](screenshots/17.jpg)
+
+
+#### Save an overlay to nifti
+
 
 ![Image 1](screenshots/7.png)
 
@@ -109,10 +122,20 @@ Switch between loaded or generated overlays from the *current overlays* section 
 
 ## PK modelling widget
 
+- Load DCE-MRI, ROI and T10 map
+- Select pharamacokinetic model
+- Input image parameters
+- Run modelling inside the ROI
+
 ![Image 1](screenshots/15.png)
 
+*Still required:*
+- Testing of preclinical batch t10 mapping and pk modelling
+- Inclusion of Contrast-to-noise ratio restriction
 
 ## Visualisation of model fit widget
+- *Additional Widgets -> PharmCurveView*
+- If Pk modelling has been run or *model curves* are loaded from a nifti file then visualise the difference in parameters between the model fit and the true data. 
 
 ![Image 1](screenshots/14.png)
 
