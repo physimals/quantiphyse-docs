@@ -1,3 +1,6 @@
+|docs|
+
+
 # PkView 
 
 [Link to formatted documentation](http://pkview.readthedocs.org/en/latest/)
@@ -143,6 +146,12 @@ Switch between loaded or generated overlays from the *current overlays* section 
 
 ![Image 1](screenshots/14.png)
 
+
 $$ x^2 $$
 
 Images copyright 2016 Benjamin Irving
+
+.. |docs| image:: http://pkview.readthedocs.org/en/latest/?badge=latest
+    :alt: Documentation Status
+    :scale: 100%
+    :target: http://pkview.readthedocs.org/en/latest/?badge=latest
