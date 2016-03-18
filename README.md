@@ -1,8 +1,5 @@
 
-
 # PkView 
-
-|docs|
 
 [Link to formatted documentation](http://pkview.readthedocs.org/en/latest/)
 
@@ -152,7 +149,3 @@ $$ x^2 $$
 
 Images copyright 2016 Benjamin Irving
 
-.. |docs| image:: http://pkview.readthedocs.org/en/latest/?badge=latest
-    :alt: Documentation Status
-    :scale: 100%
-    :target: http://pkview.readthedocs.org/en/latest/?badge=latest
