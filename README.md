@@ -18,6 +18,7 @@ The current intention of this software is for "in house" use only and shouldn't 
 
 Executables are available for Ubuntu, Windows and OSx. 
 
+For OSx one dependency is not yet ready for high definition screens which leads to poorer resolution. 
 
 ## Basic Usage
 
@@ -70,6 +71,9 @@ Switch between loaded or generated overlays from the *current overlays* section 
 - Multiple points can be selected with multiple colors
 - These points only appear on the axial slice and need to be cleared before changing clear. 
 - Points can be cleared with X
+![Image 1](screenshots/7.png)
+
+
 
 ## Saving images
 
@@ -84,9 +88,7 @@ Switch between loaded or generated overlays from the *current overlays* section 
 
 #### Save an overlay to nifti
 
-
-![Image 1](screenshots/7.png)
-
+[To write]
 
 ## Overlay options widget
 
@@ -101,7 +103,7 @@ Switch between loaded or generated overlays from the *current overlays* section 
 - PCA based curve clustering allows clustering of tumour subregions based on contrast enhancement characteristics. 
 - Number of clusters
 - PCA modes used for clustering
-- Advanced options: Merge clusters, get cluster sizes
+- Advanced options: Merge clusters, auto merge clusters, get cluster sizes
 
 ![Image 1](screenshots/10.png)
 
