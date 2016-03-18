@@ -1,7 +1,8 @@
-|docs|
 
 
 # PkView 
+
+|docs|
 
 [Link to formatted documentation](http://pkview.readthedocs.org/en/latest/)
 
