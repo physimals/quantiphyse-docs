@@ -1,7 +1,7 @@
 
 # PkView 
 
-[Link to formatted documentation](http://pkview.readthedocs.org/en/latest/)
+Link to formatted documentation: [http://pkview.readthedocs.org/en/latest/](http://pkview.readthedocs.org/en/latest/)
 
 (build 0.2)
 
