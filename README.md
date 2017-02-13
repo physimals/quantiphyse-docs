@@ -24,6 +24,10 @@ Executables are available for Ubuntu, Windows and OSx.
 
 For OSx one dependency is not yet ready for high definition screens which leads to poorer resolution. 
 
+### Requirements
+
+Multiple large volumes are often used or created during analysis. Therefore, a computer with enough memory is required (at least 8GB). 
+
 ## Basic Usage
 
 #### Nifti 
@@ -186,6 +190,7 @@ Generate T1 maps from variable flip angle images (used as a preprocessing step f
 - If Pk modelling has been run or *model curves* are loaded from a nifti file then visualise the difference in parameters between the model fit and the true data. 
 
 ![Image 1](screenshots/14.png)
+ 
 
 
 Images copyright 2016, 2017 Benjamin Irving
