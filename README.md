@@ -17,12 +17,22 @@ used as a diagnostic tool. The authors or distributors will not be responsible f
 any direct, indirect, special, incidental, or consequential damages arising of the use of this software.The current intention of this software is for "in house" use only and shouldn't be distributed without the explicit consent of the authors.**
 
 
-
 ## Installation
 
-Executables are available for Ubuntu, Windows and OSx. 
+Executables are available for Ubuntu, Windows and macOS. 
 
+### Windows
+- unzip the pkviewer2-0.31-win64.zip package
+- There are a larger number of files but find and click on the pkviewer2.exe file
+- A shortcut can be created to this file on your desktop but the exe file must remain with all the other dependencies. 
+
+### macOS
 For OSx one dependency is not yet ready for high definition screens which leads to poorer resolution. 
+
+### Ubuntu
+The software can be installed from the .deb package
+
+
 
 ### Requirements
 
