@@ -88,9 +88,15 @@ Switch between loaded or generated overlays from the *current overlays* section 
 
 - Scroll mouse button to navigate through the volume
 - Left click on a point to navigate through the volume
+- Hold right button and move mouse to zoom
 - Use the sliders at the bottom to navigate through the volume
 - Double click on a window to expand (see below)
 
+*Hold right button and move mouse to zoom*
+![Image 1](screenshots/Screenshot_4.png)
+
+
+*Double click to expand one window*
 ![Image 1](screenshots/Selection_204.jpg)
 
 ## Volume, ROI and overlay interaction
