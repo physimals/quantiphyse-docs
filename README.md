@@ -1,12 +1,13 @@
 
 # PkView 
 
-Documentation for PkView, a Viewer for 3D and 4D functional data and Pharmacokinetic modelling. Not publicly available (yet). 
+Created by [Ben Irving](mailto:benjamin.irv@gmail.com)
 
-(build 0.31)
+PkView is a viewer for 3D and 4D functional data and Pharmacokinetic modelling. It is not yet publicly available, please contact the current maintainer [martin.craig@eng.ox.ac.uk](mailto:martin.craig@eng.ox.ac.uk) if you wish to use the software
+
+This documentation is based on release version 0.31
+
 ![Image 1](screenshots/Selection_177.jpg)
-
-
 
 ## Disclaimer and acknowledgments
 
@@ -16,10 +17,9 @@ Please acknowledge this software in any publication or other work that uses anal
 used as a diagnostic tool. The authors or distributors will not be responsible for 
 any direct, indirect, special, incidental, or consequential damages arising of the use of this software.The current intention of this software is for "in house" use only and shouldn't be distributed without the explicit consent of the authors.**
 
-
 ## Installation
 
-Executables are available for Ubuntu, Windows and macOS. 
+Binary distributions are available for Ubuntu, Windows and macOS. They include all Python dependencies so they are self-contained, although rather large.
 
 ### Windows
 - unzip the pkviewer2-0.31-win64.zip package
@@ -27,12 +27,12 @@ Executables are available for Ubuntu, Windows and macOS.
 - A shortcut can be created to this file on your desktop but the exe file must remain with all the other dependencies. 
 
 ### macOS
+
 For OSx one dependency is not yet ready for high definition screens which leads to poorer resolution. 
 
 ### Ubuntu
-The software can be installed from the .deb package
 
-
+The software can be installed from the `.deb` package, or from the `.tar.gz`. 
 
 ### Requirements
 
@@ -40,49 +40,58 @@ Multiple large volumes are often used or created during analysis. Therefore, a c
 
 ## Basic Usage
 
+#### Image concepts
+
+PKView works with three basic types of image:
+
+ - The main volume. This is typically a 4D data set and defines the dimensions of the data. All other images must have consistent
+ dimensions. Only one main volume can be loaded, if a new main volume is loaded all other data will be cleared.
+ 
+ - Overlays. These may be 3D or 4D, if they are 4D the fourth dimension must currently match the 4th dimension of the main volume. They are viewed as colour images on top of the main volume.
+ 
+ - Regions of Interest (ROIs). These must be 3D and contain integer data only. Voxels with the value zero are taken to be outside the 
+ region of interest, nonzero values are inside. ROIs with more than one nonzero value describe multi-level regions of interest which
+ are handled by some of the tools in PkView.
+ 
 #### Nifti 
 
-This software package works with nifti volumes. Please convert dicoms to nifti first using one of a number of tools including: [itk-snap](http://www.itksnap.org/pmwiki/pmwiki.php), [dcm2nii](https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage) or the batch version which allows a number of volumes to be converted [dcm2niibatch](https://github.com/rordenlab/dcm2niix)
+This software package works with NIFTI volumes. DICOM files will need to be converted to NIFTI first using one of a number of tools including: 
 
-#### Load 4D volume
+ - [itk-snap](http://www.itksnap.org/pmwiki/pmwiki.php), 
+ - [dcm2nii](https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage) 
+ - Or the batch version which allows a number of volumes to be converted [dcm2niibatch](https://github.com/rordenlab/dcm2niix)
 
-PKView loads images, rois and overlays from nifti files. 
+#### Loading the main volume
 
 Either: 
 
-1) Drag and drop a 4D nifti file onto the viewer
+ - Drag and drop a NIFTI file onto the viewer
 
 or
 
-2) File -> Load Image
-
+ - File -> Load Image Volume
+ 
 ![Image 1](screenshots/1.png)
 
-When dragging and dropping, a window will pop up to specify whether the image is a 4D volume, ROI or overlay. 
+When dragging and dropping, a window will pop up to specify whether the image is the 4D main volume, and ROI or an overlay. 
 
 ![Image 2](screenshots/2.jpg)
 
-The image will appear in the 3 views. 
-Options
-- Zoom using the **right mouse button**
-- **Left mouse button** click a point
-- **scroll** using the mouse wheel
-- Options allow scaling based on the voxel size
+The image will appear in the 3 orthographic views. 
 
 ![Image 1](screenshots/3.png)
 
 #### Load ROI and overlays
 
-Drag-and-drop or load overlays in a similar way.
+Drag-and-drop or use the `File` menu to load overlays and ROIs in a similar way.
 
-For overlays specify the overlay type or a generic type (as show below)
+For overlays a type must be given - a list of standard types is provided or you can specify your own.
 
 ![Image 1](screenshots/4.jpg)
 
-Switch between loaded or generated overlays from the *current overlays* section of the **Volumes** widget. 
+You can switch between loaded or generated overlays using the list box below the main viewing windows, or from the *current overlays* section of the **Volumes** widget. 
 
 ![Image 1](screenshots/5.png)
-
 
 ## General interaction
 
@@ -95,14 +104,12 @@ Switch between loaded or generated overlays from the *current overlays* section 
 *Hold right button and move mouse to zoom*
 ![Image 1](screenshots/Screenshot_4.png)
 
-
 *Double click to expand one window*
 ![Image 1](screenshots/Selection_204.jpg)
 
 ## Volume, ROI and overlay interaction
 
 ![Image 1](screenshots/navigation.png)
-
 
 ## Voxel analysis widget
 
@@ -115,11 +122,10 @@ Switch between loaded or generated overlays from the *current overlays* section 
 - Points can be cleared with X
 ![Image 1](screenshots/7.png)
 
-
-
 ## Saving images
 
 #### Save a screen shot or plot
+
 - Right click on an image or plot
 - Click *Export*
 - A view box will appear with the various format options. 
@@ -127,8 +133,7 @@ Switch between loaded or generated overlays from the *current overlays* section 
 
 ![Image 1](screenshots/17.jpg)
 
-
-#### Save an overlay to nifti
+#### Save an overlay to NIFTI file
 
 File -> Save Current overlay
 
@@ -139,7 +144,6 @@ File -> Save Current overlay
 
 ![Image 1](screenshots/Selection_177.jpg)
 
-
 ## Curve clustering widget
 
 - PCA based curve clustering allows clustering of tumour subregions based on contrast enhancement characteristics. 
@@ -148,7 +152,6 @@ File -> Save Current overlay
 - Advanced options: Merge clusters, auto merge clusters, get cluster sizes
 
 ![Image 1](screenshots/10.png)
-
 
 ## Overlay clustering widget
 
@@ -167,7 +170,6 @@ Create supervoxel regions within an ROI (see https://arxiv.org/abs/1606.09518v2)
 
 ![Image 1](screenshots/Selection_166.jpg)
 
-
 ## Mean value widget
 Generate mean values from the current overlays for each ROI. 
 
@@ -183,7 +185,6 @@ Generate T1 maps from variable flip angle images (used as a preprocessing step f
 
 *Loading muliple flip angle volumes*
 ![Image 1](screenshots/Screenshot_3.png)
-
 
 ## PK modelling widget
 
@@ -207,7 +208,5 @@ Generate T1 maps from variable flip angle images (used as a preprocessing step f
 
 ![Image 1](screenshots/14.png)
  
-
-
 Images copyright 2016, 2017 Benjamin Irving
 
