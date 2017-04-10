@@ -1,7 +1,7 @@
 
 # PkView 
 
-Created by [Ben Irving](mailto:benjamin.irv@gmail.com)
+Created by [Ben Irving](mailto:mail@birving.com)
 
 PkView is a viewer for 3D and 4D functional data and Pharmacokinetic modelling. It is not yet publicly available, please contact the current maintainer [martin.craig@eng.ox.ac.uk](mailto:martin.craig@eng.ox.ac.uk) if you wish to use the software
 
