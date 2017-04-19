@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# PKView documentation build configuration file, created by
+# Quantiphyse documentation build configuration file, created by
 # sphinx-quickstart on Fri Mar 18 18:58:45 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -47,9 +47,10 @@ source_suffix = '.rst'
 master_doc = 'README'
 
 # General information about the project.
-project = u'PKView'
+project = u'Quantiphyse'
+title = u'Quantiphyse Documentation'
 copyright = u'2016, Benjamin Irving'
-author = u'Benjamin Irving'
+author = u'Benjamin Irving, Martin Craig'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -201,7 +202,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'PKViewdoc'
+htmlhelp_basename = project
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -223,8 +224,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'PKView.tex', u'PKView Documentation',
-     u'Benjamin Irving', 'manual'),
+    (master_doc, '%s.tex' % project, title, author, 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -253,8 +253,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'pkview', u'PKView Documentation',
-     [author], 1)
+    (master_doc, project.lower(), title, [author], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -267,9 +266,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'PKView', u'PKView Documentation',
-     author, 'PKView', 'One line description of project.',
-     'Miscellaneous'),
+    (master_doc, project, title, author, project.lower(), title, 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.
