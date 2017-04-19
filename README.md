@@ -13,11 +13,9 @@ This documentation is based on release version 0.31
 
 Licensing details will be added on first public release
 
-## Basic Usage
+## Overview
 
-#### Image concepts
-
-Quantiphyse works with three basic types of image:
+Quantiphyse works with three types of image:
 
  - The main volume. This is typically a 4D data set and defines the dimensions of the data. All other images must have consistent
  dimensions. Only one main volume can be loaded, if a new main volume is loaded all other data will be cleared.
@@ -27,7 +25,9 @@ Quantiphyse works with three basic types of image:
  - Regions of Interest (ROIs). These must be 3D and contain integer data only. Voxels with the value zero are taken to be outside the 
  region of interest, nonzero values are inside. ROIs with more than one nonzero value describe multi-level regions of interest which
  are handled by some of the tools in PkView.
- 
+
+![Overview](screenshots/overview.png)
+
 #### Nifti 
 
 This software package works with NIFTI volumes. DICOM files will need to be converted to NIFTI first using one of a number of tools including: 
