@@ -1,0 +1,12 @@
+T1 mapping widget
+=================
+
+Generate T1 maps from variable flip angle images (used as a preprocessing step for PK modelling)
+
+*Using a single 4D volume with multiple flip angles*
+
+.. image:: screenshots/Selection_181.jpg
+
+*Loading muliple flip angle volumes*
+
+.. image:: screenshots/Screenshot_3.png
