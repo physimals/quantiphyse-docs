@@ -30,6 +30,7 @@ Licensing details will be added on first public release
    t1
    pk
    modelfit
+   reg
 
 Images copyright 2016, 2017 Benjamin Irving
 

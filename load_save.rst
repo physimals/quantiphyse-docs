@@ -1,24 +1,37 @@
+=======================
 Loading and Saving Data
 =======================
 
 File Formats
-------------
+============
 
-This software package works with NIFTI volumes. DICOM files will need to be converted to NIFTI first using one of a number of tools including: 
+This software package works with NIFTI volumes. DICOM files will need to be converted to NIFTI first using one 
+of a number of tools including: 
 
  - `itk-snap <http://www.itksnap.org/pmwiki/pmwiki.php>`_
  - `dcm2nii <https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage>`_
  - Or the batch version which allows a number of volumes to be converted 
    `dcm2niibatch <https://github.com/rordenlab/dcm2niix>`_
 
-Loading the main volume
------------------------
+Loading data
+============
 
-Either: 
+Drag and drop
+-------------
 
- - Drag and drop a NIFTI file onto the viewer
+You can drag and drop single or multiple files onto the main window to load data. You will be prompted to 
+choose the type of data:
 
-or
+.. image:: screenshots/drag_drop_choice.png
+
+Generally the name can be left alone - changing it may be useful if you are loading multiple files with the same
+name. If you drag and drop multiple files you will be asked to choose the type of each one. If you select *cancel* 
+the data file will not be loaded.
+
+menu
+----
+
+The following menu options can be used to load data files:
 
  - File -> Load Image Volume
  
