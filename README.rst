@@ -15,6 +15,9 @@ License
 -------
 Licensing details will be added on first public release
 
+User Guide
+----------
+
 .. toctree::
    :maxdepth: 2
 
