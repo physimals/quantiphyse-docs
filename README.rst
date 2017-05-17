@@ -34,6 +34,8 @@ User Guide
    pk
    modelfit
    reg
+   batch
+   console
 
 Images copyright 2016, 2017 Benjamin Irving
 
