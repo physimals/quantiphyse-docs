@@ -7,13 +7,13 @@ Quantiphyse is a viewer for 3D and 4D functional data and Pharmacokinetic modell
 please contact the current maintainer `martin.craig@eng.ox.ac.uk <mailto:martin.craig@eng.ox.ac.uk>`_ if you wish 
 to use the software
 
-This documentation is based on release version 0.31
+This documentation is based on the current development version.
 
 .. image:: screenshots/Selection_177.jpg
 
 License
 -------
-Licensing details will be added on first public release
+Licensing details will be added on first public release. The software will be free for non-commercial use.
 
 User Guide
 ----------
@@ -28,12 +28,14 @@ User Guide
    overlay_stats
    curve_cluster
    overlay_cluster
-   sv
    mean_values
-   t1
-   pk
    modelfit
    reg
+   roibuilder
+   sv
+   t1
+   pk
+   fabber
    batch
    console
 

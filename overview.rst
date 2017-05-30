@@ -15,6 +15,15 @@ however you can set any data set to be the main volume.
 Data sets must have consistent dimensions to be loaded simultaneously. This means the first 3 dimensions must
 match currently loaded data, and if the dataset is 4D, this must match any other 4D data sets loaded.
 
+Data orientation
+----------------
+
+All data is stored internally in RAS orientation. For file formats (e.g. Nifti) which include a file->RAS transformation
+matrix, the file data is transformed to RAS space on file load. 
+
+*This transformation is currently limited to transposition and flipping of axes and cannot handle general affine 
+transformations*
+
 Special cases
 -------------
 

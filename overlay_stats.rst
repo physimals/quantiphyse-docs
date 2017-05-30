@@ -5,8 +5,7 @@ This widget displays overlay statistics for each region in the current ROI. You 
 display statistics for the current overlay or for all overlays.
 
 The top table displays global statistics across the whole overlay volume - Mean, Median, Variance, Min and Max. The 
-'Single Slice' table shows the same statistics for the last selected slice. This is changed by clicking on the
-ortho view windows and refers to the slice oriented in the direction of the last view to be clicked on.
+'Single Slice' table shows the same statistics for the current slice in the selected direction. 
 
 .. image:: screenshots/Selection_177.jpg
 
