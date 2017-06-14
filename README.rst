@@ -7,7 +7,8 @@ Quantiphyse is a viewer for 3D and 4D functional data and Pharmacokinetic modell
 please contact the current maintainer `martin.craig@eng.ox.ac.uk <mailto:martin.craig@eng.ox.ac.uk>`_ if you wish 
 to use the software
 
-This documentation is based on the current development version.
+This documentation is based on the current development version, hence some of the information and screenshots
+may be slightly out of date due to recent development work.
 
 .. image:: screenshots/Selection_177.jpg
 
@@ -36,6 +37,7 @@ User Guide
    t1
    pk
    fabber
+   simple_maths
    batch
    console
 

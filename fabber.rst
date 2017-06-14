@@ -3,7 +3,12 @@ Fabber widget
 
 - *Widgets -> Fabber*
 
-This widget allows use of the Fabber Bayesian model fitting tool within Quantiphyse.
+This widget allows use of the Fabber Bayesian model fitting tool within Quantiphyse. For more information 
+on the Fabber method, see:
+
+*Chappell, M.A., Groves, A.R., Woolrich, M.W., "Variational Bayesian inference for a non-linear forward model", 
+IEEE Trans. Sig. Proc., 2009, 57(1), 223–236.*
+
 
 A Simple example
 ----------------
