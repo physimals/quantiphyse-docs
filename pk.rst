@@ -14,11 +14,11 @@ chunks.
 
 *Start of modelling*
 
-.. image:: screenshots/Screenshot_2.png
+.. image:: screenshots/pk_start.png
 
 *Modelling complete with newly generated Ktrans map*
 
-.. image:: screenshots/Screenshot_1.png
+.. image:: screenshots/pk_output.png
 
 *Still required:*
 

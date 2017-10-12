@@ -7,8 +7,8 @@ file containing all the flip angles.
 
 *Using a single 4D volume with multiple flip angles*
 
-.. image:: screenshots/Selection_181.jpg
+.. image:: screenshots/t1_multiple_fas.jpg
 
 *Loading muliple flip angle volumes*
 
-.. image:: screenshots/Screenshot_3.png
+.. image:: screenshots/t1_single_fa.png

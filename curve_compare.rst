@@ -1,12 +1,19 @@
-Voxel analysis widget
-=====================
+Time series widget
+==================
 
-- The voxel analysis widget gives the enhancement curve of the currently selected location. 
+- The time series widget shows the signal-time curve at the currently selected location. 
 
-.. image:: screenshots/6.png
+.. image:: screenshots/curve_compare_single.png
 
-- Multiple points can be selected with multiple colors
-- Mean curves for each color can be calculated
-- Points can be cleared with X
+- If 'Multiple curves' is selected, each click on the image adds a new curve to the plot. By changing
+  the colour, a series of curves can be plotted enabling different parts of the image to be compared
 
-.. image:: screenshots/7.png
+- The mean curve for each color can also be displayed. This is shown with large circular markers and 
+  a dotted line.
+
+- If 'smooth curves' is selected, the line will not pass through each point but instead follow a smoother
+  curve that approximates the points.
+
+- The plot can be cleared by clicking on the red X at the top right of the window
+
+.. image:: screenshots/curve_compare_multiple.png

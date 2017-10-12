@@ -5,8 +5,10 @@ Loading and Saving Data
 File Formats
 ============
 
-This software package works with NIFTI volumes. DICOM files will need to be converted to NIFTI first using one 
-of a number of tools including: 
+This software package works with NIFTI volumes. Some builds may contain experimentatl support for
+folders of DICOM files, however this is not well tested.
+
+Alternative packages which are able to convert DICOM files to NIFTI include the following: 
 
  - `itk-snap <http://www.itksnap.org/pmwiki/pmwiki.php>`_
  - `dcm2nii <https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage>`_
@@ -24,39 +26,37 @@ choose the type of data:
 
 .. image:: screenshots/drag_drop_choice.png
 
-Generally the name can be left alone - changing it may be useful if you are loading multiple files with the same
-name. If you drag and drop multiple files you will be asked to choose the type of each one. If you select *cancel* 
+The suggested name is derived from the file name but is modified to ensure that it is a valid name
+(data names must be valid Python variable names) and does not clash with any existing data.
+
+If you choose a name which is the same as an existing data set, you will be asked if you wish to overwrite
+the existing data. 
+
+When dropping multiple files you will be asked to choose the type of each one. If you select *cancel* 
 the data file will not be loaded.
 
-menu
+Menu
 ----
 
-The following menu options can be used to load data files:
+The following menu option can be used to load data files:
 
- - File -> Load Image Volume
+ - File -> Load
  
-.. image:: screenshots/1.png
+.. image:: screenshots/file_menu.png
 
-When dragging and dropping, a window will pop up to specify whether the image is the 4D main volume, and ROI or an overlay. 
+You will be prompted to choose the file type (data or ROI) and name in the same was as drag/drop.
 
-.. image:: screenshots/2.jpg
+Saving Data
+===========
 
-The image will appear in the 3 orthographic views. 
+The following menu options are used for saving data:
 
-.. image:: screenshots/3.png
+- File -> Save current Overlay
+- File -> Save current ROI
 
-Load ROI and overlays
----------------------
-
-Drag-and-drop or use the `File` menu to load overlays and ROIs in a similar way.
-
-For overlays a type must be given - a list of standard types is provided or you can specify your own.
-
-.. image:: screenshots/4.jpg
-
-You can switch between loaded or generated overlays using the list box below the main viewing windows, or from the *current overlays* section of the **Volumes** widget. 
-
-.. image:: screenshots/5.png
+So, to save a data set you need to make it the current overlay, using the Overlay menu or the Volumes
+widget. Similarly to save an ROI you need to make it the current ROI. Saving the main data can be 
+done by selecting it as the current overlay.
 
 Save a screen shot or plot
 --------------------------
@@ -66,9 +66,4 @@ Save a screen shot or plot
 - A view box will appear with the various format options. 
 - *svg* format will allow editing of the layers and nodes in inkscape or another vector graphics viewer. 
 
-.. image:: screenshots/17.jpg
-
-Save an overlay to NIFTI file
------------------------------
-
-File -> Save Current overlay
+.. image:: screenshots/export_image.png

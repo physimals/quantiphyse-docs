@@ -25,7 +25,7 @@ the axes are transposed and/or flipped in order to make the internal representat
 RAS orientation.
 
 For data sets defined on different grids, Quantiphyse resamples all data onto the same grid as the main data
-so that analysis steps can be carried out consistently. So while different resolutions/orientations can be
+so that analysis steps can be carried out consistently. So, while different resolutions/orientations can be
 displayed simultaneously, resolution may be reduced and there may be artifacts associated with the 
 resampling.
 
@@ -33,21 +33,15 @@ The intention is to move to a more flexible model in the future where visualisat
 source data/resolution/orientation and resampling onto a standard grid only occurs where necessary 
 for an analysis tool.
 
-Display of 2D slice data within a 3D volume is not well handled currently due to difficulties with
-resampling this type of data. However working with consistently 2D data should not pose a problem.
+.. warning::
+    Display of 2D slice data within a 3D volume is not well handled currently due to difficulties with
+    resampling this type of data. However working with consistently 2D data should not pose a problem.
 
 Special cases
 -------------
 
 Quantiphyse will try to handle some special cases which would otherwise prevent data being loaded and 
 processed properly.
-
-*Broken affine transformations*
-
-Some data files may have incorrect file->world space transformations, meaning that although they *do* correspond
-to other data the ordering of the dimensions is inconsistent. When loading data where dimensions are not
-consistent, Quantiphyse will try ignoring the file transformation and take the data dimensions directly from
-the file contents. If this enables the data to be loaded consistently, it will do so (with a warning).
 
 *Multi-volume 2D data*
 
@@ -59,7 +53,8 @@ is already loaded (either single or multiple volumes), subsequent 3D data sets w
 multiple volume data sets if that enables them to be loaded (i.e. if the third dimension is consistent with
 other loaded data sets).
 
-Note that in Nifti files the first 3 dimensions are required to be spatial, so where this occurs with a Nifti
-file it implies that the file is incorrectly formed and you should ideally correct the acquisition step which
-produced it.
+.. note::
+    In Nifti files the first 3 dimensions are required to be spatial, so where this occurs with a Nifti
+    file it implies that the file is incorrectly formed and you should ideally correct the acquisition step which
+    produced it.
 

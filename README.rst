@@ -10,7 +10,7 @@ to use the software
 This documentation is based on the current development version, hence some of the information and screenshots
 may be slightly out of date due to recent development work.
 
-.. image:: screenshots/Selection_177.jpg
+.. image:: screenshots/overlay_stats.jpg
 
 License
 -------
@@ -26,9 +26,7 @@ User Guide
    load_save
    interaction
    curve_compare
-   overlay_stats
-   curve_cluster
-   overlay_cluster
+   cluster
    mean_values
    modelfit
    reg
