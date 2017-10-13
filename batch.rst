@@ -167,3 +167,42 @@ artifact.
 
 In this case, the volume data will be saved in ``out/Subject1/roi_vols.txt``. In this case the
 output is a tab-separated file which can be loaded into a spreadsheet.
+
+Building batch files from the GUI
+---------------------------------
+
+Future extensions
+-----------------
+
+The batch system may be extended in the future, however it is *not* intended to be a programming language
+and basic facilities such as loops and conditionals will not be implemented. If your processing
+pipeline is complex enough to require this the suggested method is to write the process in Python,
+using Quantiphyse modules directly, for example::
+
+    from quantiphyse.volumes import ImageVolumeManagement
+    from quantiphyse.analysis.io import LoadProcess, SaveProcess
+
+    ivm = ImageVolumeManagement()
+    load = LoadProcess()
+    load.run({"data" : {"mydata.nii" : "data"}, "rois" : {"mask_43.nii.gz" : "roi"}})
+
+    # The std() method returns the data on the standard RAS grid derived from the main data
+    numpy_data = ivm.data["data"].std()
+
+    # ...Do my processing here which may involve running additional Quantiphyse processes
+    #    alongside custom Python manipulations...
+
+    ivm.add_data(output_data, name="output_data")
+    save = SaveProcess()
+    save.run({"output_data":"output_data.nii.gz"})
+
+The processing modules available in the batch file are all included in the quantiphyse.analysis package. 
+They all operate on data stored in the ImageVolumeManagement object. Data can be added to this object using 
+the ``add_data`` and `add_roi`` methods, which can take a Numpy array, provided it's dimensions are 
+consistent with the current main data. This means that you can load data independently or generate it
+programmatically if this is required.
+
+.. warn::
+    The volume management and analysis process APIs are *not* currently stable and you 
+    will need to read the code to see how to use them - a stable API may be defined in the future for this 
+    purpose.
