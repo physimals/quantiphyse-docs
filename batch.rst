@@ -96,6 +96,7 @@ If a particular case needs options to be varied, you can override any of the top
 For example.
 
 ::
+
     Cases:
         Subj0001:
             Folder:   c:\mydata\0001
@@ -106,6 +107,7 @@ For example.
 Or, if one case is causing problems we might enable debug mode just for that case
 
 ::
+
     Debug: False
 
     Cases:
@@ -121,6 +123,7 @@ The ``Processing`` block contains a list of steps, which will be performed in or
 example performs motion correction on the main data, followed by PK modelling:
 
 ::
+
     Processing:
         - Moco:
             method: deeds
@@ -146,6 +149,7 @@ the ``CalcVolumes`` process calculates the volume of each region of an ROI and o
 artifact.
 
 ::
+
     OutputFolder: out
 
     Processing:
@@ -203,6 +207,7 @@ consistent with the current main data. This means that you can load data indepen
 programmatically if this is required.
 
 .. warn::
+
     The volume management and analysis process APIs are *not* currently stable and you 
     will need to read the code to see how to use them - a stable API may be defined in the future for this 
     purpose.
