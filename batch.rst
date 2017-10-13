@@ -202,12 +202,11 @@ using Quantiphyse modules directly, for example::
 
 The processing modules available in the batch file are all included in the quantiphyse.analysis package. 
 They all operate on data stored in the ImageVolumeManagement object. Data can be added to this object using 
-the ``add_data`` and `add_roi`` methods, which can take a Numpy array, provided it's dimensions are 
+the ``add_data`` and ``add_roi`` methods, which can take a Numpy array, provided it's dimensions are 
 consistent with the current main data. This means that you can load data independently or generate it
 programmatically if this is required.
 
-.. warn::
-
+.. warning::
     The volume management and analysis process APIs are *not* currently stable and you 
     will need to read the code to see how to use them - a stable API may be defined in the future for this 
     purpose.
