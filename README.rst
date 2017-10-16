@@ -3,8 +3,17 @@ Quantiphyse
 
 Created by `Ben Irving <mailto:mail@birving.com>`_
 
-Quantiphyse is a viewer for 3D and 4D functional data and Pharmacokinetic modelling. It is not yet publicly available, 
-please contact the current maintainer `martin.craig@eng.ox.ac.uk <mailto:martin.craig@eng.ox.ac.uk>`_ if you wish 
+Quantiphyse is a viewing and analysis tool for 3D and 4D biomedical data. 
+
+Features include:
+- Basic 2D orthographic viewing and navigation of data, regions of interest (ROIs) and overlays
+- Generic analysis tools including clustering, supervoxel generation and curve comparison
+- Tools for DCE-MRI pharmacokinetic modelling
+- Tools for basic ROI generation
+- Extensible via 'Widgets', including registration/motion correction, ASL and CEST MRI data and Bayesian modelling
+
+Quantiphyse is not yet publically available although a release is planned in the near future.
+Please contact the current maintainer `martin.craig@eng.ox.ac.uk <mailto:martin.craig@eng.ox.ac.uk>`_ if you wish 
 to use the software
 
 This documentation is based on the current development version, hence some of the information and screenshots
