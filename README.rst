@@ -2,17 +2,21 @@
 Quantiphyse 
 ===========
 
-Created by `Ben Irving <mailto:mail@birving.com>`_
+Contributors
 
+ - `Ben Irving <mailto:mail@birving.com>`_ (Original author)
+ - `Martin Craig <mailto:martin.craig@eng.ox.ac.uk>`_ (Current maintainer)
+ - `Michael Chappell <mailto:michael.chappell@eng.ox.ac.uk>`_
+ 
 Quantiphyse is a viewing and analysis tool for 3D and 4D biomedical data. 
 
 Features include:
 
- - Basic 2D orthographic viewing and navigation of data, regions of interest (ROIs) and overlays
+ - 2D orthographic viewing and navigation of data, regions of interest (ROIs) and overlays
  - Generic analysis tools including clustering, supervoxel generation and curve comparison
  - Tools for DCE-MRI pharmacokinetic modelling
  - Tools for basic ROI generation
- - Extensible via 'Widgets', including registration/motion correction, ASL and CEST MRI data and Bayesian modelling
+ - Extensible via plugins, including registration/motion correction, ASL and CEST MRI data and Bayesian modelling
 
 Quantiphyse is not yet publically available although a release is planned in the near future.
 Please contact the current maintainer `martin.craig@eng.ox.ac.uk <mailto:martin.craig@eng.ox.ac.uk>`_ if you wish 
