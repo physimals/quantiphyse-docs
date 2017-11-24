@@ -96,9 +96,9 @@ parameters above, and your new pool will then be selected by default.
 Analysis options
 ----------------
 
-These affect how Fabber performs the model fitting
-
 .. image:: screenshots/cest_analysis_options.png
+
+These affect how Fabber performs the model fitting
 
   - ``Spatial regularization`` - if enabled, adaptive smoothing will be performed on the parameter maps, with the degree of smoothing determined by the variation of the data
   - ``Allow uncertainty in T1/T2 values`` - T1/T2 will be inferred, using the pool-specified values as initial priors
@@ -129,10 +129,10 @@ The output of the model-based analysis is a set of data overlays as follows:
   
 .. image:: screenshots/cest_fitted.png
 
- CEST R* calculation
- ~~~~~~~~~~~~~~~~~~~
+CEST R* calculation
+~~~~~~~~~~~~~~~~~~~
  
- The R* calculation is performed as follows:
+The R* calculation is performed as follows:
  
   - After the model fitting process, for each non-water pool, two separate z-spectrum predictions are evaluated at each voxel:
     - The spectrum based on the water pool only
@@ -144,17 +144,17 @@ The output of the model-based analysis is a set of data overlays as follows:
   
     R* = (water - water+pool) / M0
   
- Lorentzian difference analysis
- ------------------------------
+Lorentzian difference analysis
+------------------------------
  
- This is a quicker alternative to model-based analysis, however less information is returned.
+This is a quicker alternative to model-based analysis, however less information is returned.
  
- The calculation is performed using the Fabber fitting tool as previously, in the following way:
+The calculation is performed using the Fabber fitting tool as previously, in the following way:
  
   - Only the water pool is included, i.e. just fitting a single Lorentzian function to the z-spectrum
   - Only data points close to the water peak and unsaturated points are included. Currently this means points with ppm between -1 and 1 are included as are points with ppm > 30 or <-30
   - The raw data is subtracted from the resulting model prediction at all sampled z-spectrum points
   
- The output of the LDA calculation is provided as a multi-volume overlay ``lorenz_diff``.
+The output of the LDA calculation is provided as a multi-volume overlay ``lorenz_diff``.
  
  
