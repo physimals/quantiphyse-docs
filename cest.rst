@@ -96,9 +96,9 @@ parameters above, and your new pool will then be selected by default.
 Analysis options
 ----------------
 
-These affect how Fabber performs the model fitting
-
 .. image:: screenshots/cest_analysis_options.png
+
+These affect how Fabber performs the model fitting
 
   - ``Spatial regularization`` - if enabled, adaptive smoothing will be performed on the parameter maps, with the degree of smoothing determined by the variation of the data
   - ``Allow uncertainty in T1/T2 values`` - T1/T2 will be inferred, using the pool-specified values as initial priors
