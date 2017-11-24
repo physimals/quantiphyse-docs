@@ -50,6 +50,7 @@ User Guide
    t1
    pk
    fabber
+   cest
    simple_maths
    batch
    console
