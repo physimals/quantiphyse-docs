@@ -80,7 +80,7 @@ Identical to the ``Rectangle`` tool, but selects an elliptical region
 |poly| Polygon
 ~~~~~~~~~~~~~~
 
-.. |poly| image:: screenshots/roi_tools_poly.png 
+.. |poly| image:: screenshots/roi_tools_polygon.png 
 
 In this tool, each click on the image adds a vertex of a polygon region. When you click ``Add`` the last node is
 connected to the first node to close the polygon, and the interior is selected. Clicks within a different
