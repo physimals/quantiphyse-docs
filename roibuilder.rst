@@ -15,11 +15,11 @@ At the top of the widget, you can choose the name of the ROI you are building. Y
 ID of the region you are currently constructing - ROIs can have multiple region IDs, for example to 
 identify two distinct tumours.
 
-..image:: roi_builder_options.png
+..image:: screenshots/roi_builder_options.png
 
 Below these options is the toolbox. 
 
-..image:: roi_builder_tools.png
+..image:: screenshots/roi_builder_tools.png
 
 Each tool allows you to modify the ROI region - typically (but now always) on a single slice
 of the image.
@@ -33,7 +33,7 @@ Tools
 |xhairs| Crosshairs
 ~~~~~~~~~~~~~~~~~~~
 
-.. |xhairs| image:: roi_tools_xhairs.png 
+.. |xhairs| image:: screenshots/roi_tools_xhairs.png 
 
 This tool is used to revert to the use of mouse clicks to select points/slices of focus rather than
 select an ROI region. This is helpful in selecting the slice you are working on without accidentally defining a
