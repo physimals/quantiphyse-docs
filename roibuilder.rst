@@ -15,11 +15,11 @@ At the top of the widget, you can choose the name of the ROI you are building. Y
 ID of the region you are currently constructing - ROIs can have multiple region IDs, for example to 
 identify two distinct tumours.
 
-..image:: screenshots/roi_builder_options.png
+.. image:: screenshots/roi_builder_options.png
 
 Below these options is the toolbox. 
 
-..image:: screenshots/roi_builder_tools.png
+.. image:: screenshots/roi_builder_tools.png
 
 Each tool allows you to modify the ROI region - typically (but now always) on a single slice
 of the image.
