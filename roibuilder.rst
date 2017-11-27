@@ -65,7 +65,7 @@ Mode`` menu allows you to choose which.
 |rectangle| Rectangle
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. |rectangle| waimagelker:: screenshots/roi_tools_rectangle.png 
+.. |rectangle| image:: screenshots/roi_tools_rectangle.png 
 
 Simple click-and-drag to select a rectangular region. When you are happy, click ``Add`` to add it to the ROI, or 
 click ``Discard`` to ignore it.
