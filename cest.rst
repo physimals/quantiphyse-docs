@@ -96,7 +96,7 @@ Custom pools
 If you want to use a pool which is not built-in, you can use the `New Pool` button to add it. You will need to provide the four 
 parameters above, and your new pool will then be selected by default.
 
-.. image:: screenshots/cest_newpool.png
+.. image:: screenshots/cest_new_pool.png
 
 .. warning::
     Currently custom pools, and custom pool values are not saved when you exit Quantiphyse
