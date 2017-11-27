@@ -56,7 +56,7 @@ viewing windows first.
 
 This provides simple automatic segmentation using the random walk algorithm. Mouse clicks select points
 known to be inside (red flags) or outside (white flags) the region of interest - a menu allows you to 
-change between these modes. When some points have been selected, the 'Segment' button will generate an
+change between these modes. When some points have been selected, the ``Segment`` button will generate an
 ROI which includes the red flags and excludes the white flags.
 
 This process can be carried out on a slice-by-slice basis, or across the whole 3D volume - the ``segmentation
