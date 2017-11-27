@@ -15,11 +15,14 @@ At the top of the widget, you can choose the name of the ROI you are building. Y
 ID of the region you are currently constructing - ROIs can have multiple region IDs, for example to 
 identify two distinct tumours.
 
-Below these options is the toolbox. Each tool allows you to modify the ROI region - typically on a single slice
-of the image. Generally with manual segmentation, you work slice by slice, drawing around the region as you go.
-If you are doing this, you may want to maximise one of the viewing windows first. The ``Crosshairs`` tool
-allows you to interact with the viewing images in the normal way, without starting to draw ROI shapes on them.
+..image:: roi_builder_options.png
 
+Below these options is the toolbox. 
+
+..image:: roi_builder_tools.png
+
+Each tool allows you to modify the ROI region - typically (but now always) on a single slice
+of the image.
 Another use of the ROI tool is for quick definition of simple ROIs for testing. For example you 
 could define a small region of a few voxels to test a long-running analysis procedure before running it on the 
 full image. In this case, defining a region on a single slice may be sufficient.
@@ -27,18 +30,22 @@ full image. In this case, defining a region on a single slice may be sufficient.
 Tools
 -----
 
-Crosshairs
-~~~~~~~~~~
+|xhairs| Crosshairs
+~~~~~~~~~~~~~~~~~~~
+
+.. |xhairs| image:: roi_tools_xhairs.png 
 
 This tool is used to revert to the use of mouse clicks to select points/slices of focus rather than
-select an ROI region.
+select an ROI region. This is helpful in selecting the slice you are working on without accidentally defining a
+new ROI region.
 
 Pen
 ~~~
 
 This is a typical tool for manual segmentation. Click and drag to draw a boundary around the region you want to
-select. Clicking ``Add`` adds the interior of the region to the ROI.
-
+select. Clicking ``Add`` adds the interior of the region to the ROI. Generally with manual segmentation, you work 
+slice by slice, drawing around the regions as you go. If you are doing this, you may want to maximise one of the 
+viewing windows first. 
 
 Walker
 ~~~~~~
