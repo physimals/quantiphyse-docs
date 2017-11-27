@@ -18,7 +18,7 @@ Batch files are written in YAML syntax. Below is a simple example.
         - Load:
             data:
               mri.nii:
-            roi:
+            rois:
               roi.nii: mask
 
         - Fabber:

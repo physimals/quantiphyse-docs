@@ -1,4 +1,4 @@
-Quanticest
+QuantiCEST
 ==========
 
 - *Widgets -> Fabber -> CEST*
@@ -33,6 +33,8 @@ assume the file contains ASCII numeric data in list or matrix form and will disp
 Click on the column or row headers to select the column/row your frequencies are listed in. In this case, we have a Fabber ``dataspec``
 file and the frequencies are in the first column, so I have selected the first column of numbers. Click ``OK`` to enter this into your
 frequency list.
+
+.. image:: screenshots/cest_freqs_real.png
 
 Setting the field strengths
 ---------------------------
@@ -80,7 +82,11 @@ Each pool is characterized by four parameters:
   - The T1 value at the specified field strength
   - The T2 value at the specified field strength
 
-To view or change these values, click the ``Edit`` button. A warning will appear if you change the values from the defaults. Obviously
+To view or change these values, click the ``Edit`` button. 
+
+.. image:: screenshots/cest_editpools.png
+
+A warning will appear if you change the values from the defaults. Obviously
 this will be necessary if you are using a custom field strength. If you want to return to the original values at any point, click the 
 ``Reset`` button. This does not affect what pools you have selected and will not remove custom pools
 
@@ -89,6 +95,8 @@ Custom pools
 
 If you want to use a pool which is not built-in, you can use the `New Pool` button to add it. You will need to provide the four 
 parameters above, and your new pool will then be selected by default.
+
+.. image:: screenshots/cest_newpool.png
 
 .. warning::
     Currently custom pools, and custom pool values are not saved when you exit Quantiphyse
@@ -127,6 +135,8 @@ The output of the model-based analysis is a set of data overlays as follows:
   - ``modelfit`` - Model z-spectrum prediction, for comparison with raw data
   - ``cest_rstar_b``, ``cest_rstar_c``, ..etc - Calculation of R* for non-water pools - see below for method
   
+The screenshot below shows the model fitting to the z-spectrum.
+
 .. image:: screenshots/cest_fitted.png
 
 CEST R* calculation
@@ -141,9 +151,9 @@ The R* calculation is performed as follows:
     - T1 and T2 are given their prior values
     - The water ppm offset is zero
   - Each spectrum is evaluated at the pool ppm resonance value and the normalized difference to water is returned:
-  
-    R* = (water - water+pool) / M0
-  
+
+.. math:: R* = (water - water+pool) / M0
+
 Lorentzian difference analysis
 ------------------------------
  
