@@ -39,51 +39,66 @@ This tool is used to revert to the use of mouse clicks to select points/slices o
 select an ROI region. This is helpful in selecting the slice you are working on without accidentally defining a
 new ROI region.
 
-Pen
-~~~
+|pen| Pen
+~~~~~~~~~
+
+.. |pen| image:: screenshots/roi_tools_pen.png 
 
 This is a typical tool for manual segmentation. Click and drag to draw a boundary around the region you want to
 select. Clicking ``Add`` adds the interior of the region to the ROI. Generally with manual segmentation, you work 
 slice by slice, drawing around the regions as you go. If you are doing this, you may want to maximise one of the 
 viewing windows first. 
 
-Walker
-~~~~~~
+|walker| Walker
+~~~~~~~~~~~~~~~
+
+.. |walker| image:: screenshots/roi_tools_walker.png 
 
 This provides simple automatic segmentation using the random walk algorithm. Mouse clicks select points
 known to be inside (red flags) or outside (white flags) the region of interest - a menu allows you to 
 change between these modes. When some points have been selected, the 'Segment' button will generate an
 ROI which includes the red flags and excludes the white flags.
 
-This process can be carried out on a slice-by-slice basis, or across the whole 3D volume - the 'segmentation
-Mode' menu allows you to choose which.
+This process can be carried out on a slice-by-slice basis, or across the whole 3D volume - the ``segmentation
+Mode`` menu allows you to choose which.
 
-Rectangle
-~~~~~~~~~
+|rectangle| Rectangle
+~~~~~~~~~~~~~~~~~~~~~
+
+.. |rectangle| waimagelker:: screenshots/roi_tools_rectangle.png 
 
 Simple click-and-drag to select a rectangular region. When you are happy, click ``Add`` to add it to the ROI, or 
 click ``Discard`` to ignore it.
 
-Ellipse
-~~~~~~~
+|ellipse| Ellipse
+~~~~~~~~~~~~~~~~~
+
+.. |ellipse| image:: screenshots/roi_tools_ellipse.png 
 
 Identical to the ``Rectangle`` tool, but selects an elliptical region
 
-Polygon
-~~~~~~~
+|poly| Polygon
+~~~~~~~~~~~~~~
+
+.. |poly| image:: screenshots/roi_tools_poly.png 
 
 In this tool, each click on the image adds a vertex of a polygon region. When you click ``Add`` the last node is
-connected to the first node to close the polygon, and the interior is selected.
+connected to the first node to close the polygon, and the interior is selected. Clicks within a different
+slice window are ignored.
 
-Choose Region
-~~~~~~~~~~~~~
+|region| Choose Region
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. |region| image:: screenshots/roi_tools_region.png 
 
 This tool allows you to choose a region of an existing ROI - for example to isolate a particular cluster
 or supervoxel. Using the menu, select the existing ROI and then click on a point to choose the region
-within it. The region will be displayed in isolation and you can choose to 'Accept' or 'Cancel' the
+it lies within. The region will be displayed in isolation and you can choose to 'Accept' or 'Cancel' the
 selection.
 
-Eraser
-~~~~~~
+|eraser| Eraser
+~~~~~~~~~~~~~~~
 
-With this tool, click on individual voxels to remove them from the ROI
+.. |eraser| image:: screenshots/roi_tools_eraser.png 
+
+With this tool, click on individual voxels to remove them from the ROI.
