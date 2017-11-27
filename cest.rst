@@ -1,4 +1,4 @@
-Quanticest
+QuantiCEST
 ==========
 
 - *Widgets -> Fabber -> CEST*
