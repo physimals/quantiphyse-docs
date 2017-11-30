@@ -129,12 +129,18 @@ The output of the model-based analysis is a set of data overlays as follows:
 
   - ``mean_B1_off`` - Model-inferred correction to the specified B1 value
   - ``mean_ppm_off`` - Model-inferred correction to the ppm values in the z-spectrum. 
-  - ``mean_M0a`` - Inferred magnetization of the water pool
-  - ``mean_M0b_r``, ``Mean_M0c_r``, ..etc - Inferred magnetization of the other pools relative to M0a
-  - ``mean_kba``, ``mean_kca``, etc - Inferred exchange rates of non-water pools with water
   - ``modelfit`` - Model z-spectrum prediction, for comparison with raw data
-  - ``cest_rstar_b``, ``cest_rstar_c``, ..etc - Calculation of R* for non-water pools - see below for method
-  
+  - ``mean_M0_Water`` - Inferred magnetization of the water pool
+  - ``mean_M0_Amine_r``, ``mean_M0_NOE_r``, ..etc - Inferred magnetization of the other pools, relative to M0_Water
+  - ``mean_exch_Amine``, ``mean_exch_NOE``, ..etc - Inferred exchange rates of non-water pools with water
+  - ``mean_ppm_Amine``, ``mean_ppm_NOE``, ..etc - Inferred ppm frequencies of non-water pools
+  - ``cest_rstar_Amine``, ``cest_rstar_NOE``, ..etc - Calculation of R* for non-water pools - see below for method
+
+If T1/T2 values are being inferred (``Allow uncertainty in T1/T2 values`` is checked), there will be additional outputs:
+
+  - ``mean_T1_Water``, ``mean_T1_Amine``, ..etc - Inferred T1 values for each pool
+  - ``mean_T2_Water``, ``mean_T2_Amine``, ..etc - Inferred T2 values for each pool
+
 The screenshot below shows the model fitting to the z-spectrum.
 
 .. image:: screenshots/cest_fitted.png
