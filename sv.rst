@@ -15,6 +15,8 @@ Options
 
 .. image:: screenshots/sv_options.png
 
+The following options are available:
+
   - ``Data`` can be 3D or 4D data
   - ``ROI`` Select the ROI within which the supervoxels will be generated
   - ``Number of components`` PCA analysis is initially performed to reduce 4D data to a 3D volume, as with the clustering widget. This option controls the number of PCA components and is only visible for 4D data.
