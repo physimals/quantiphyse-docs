@@ -158,7 +158,7 @@ The R* calculation is performed as follows:
     - The water ppm offset is zero
   - Each spectrum is evaluated at the pool ppm resonance value and the normalized difference to water is returned:
 
-.. math:: R* = (water - water+pool) / M0
+:math:`R* = (water - water+pool) / M0`
 
 Lorentzian difference analysis
 ------------------------------
