@@ -40,6 +40,7 @@ User Guide
    overview
    load_save
    interaction
+   overlay_stats
    curve_compare
    cluster
    mean_values
