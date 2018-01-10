@@ -42,6 +42,7 @@ User Guide
    interaction
    overlay_stats
    curve_compare
+   compare
    cluster
    mean_values
    modelfit
