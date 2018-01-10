@@ -102,3 +102,9 @@ selection.
 .. |eraser| image:: screenshots/roi_tools_eraser.png 
 
 With this tool, click on individual voxels to remove them from the ROI.
+
+Undo
+----
+
+Most changes can be undone by clicking on the ``Undo`` button. Generally the last 10 additions 
+or removals can be undone.
