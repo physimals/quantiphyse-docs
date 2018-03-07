@@ -55,6 +55,7 @@ User Guide
    fabber
    cest
    asl
+   veasl
    batch
    console
 
