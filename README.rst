@@ -47,7 +47,7 @@ Generic analysis and processing tools
 ===============
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    modelfit
    compare
@@ -63,12 +63,11 @@ Generic analysis and processing tools
    batch
    console
    
-   
 Current included plugins
 ===============
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    t1
    pk
