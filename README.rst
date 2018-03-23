@@ -7,8 +7,9 @@ Contributors
  - `Martin Craig <mailto:martin.craig@eng.ox.ac.uk>`_ (Current maintainer)
  - `Ben Irving <mailto:mail@birving.com>`_ (Original author)
  - `Michael Chappell <mailto:michael.chappell@eng.ox.ac.uk>`_
- 
-Quantiphyse is a viewing and analysis tool for 3D and 4D biomedical data. It is particularly suited for physioligcal or functional imaging data comprised of multi volumes in a 4D (time-) series and/or multimodal imaging data. Quantiphyse is built around the concept of making spatially resolved measurements of physical or physiological processes from imaging data using iether model-based or model-free methods, in a large part exploiting Bayesian inference techniques. Quantiphyse can analyse data both voxelwise or within regions of interest that may be manually or automatically created, e.g. supervoxel or clustering methods. 
+ - Paula Croal
+
+Quantiphyse is a viewing and analysis tool for 3D and 4D biomedical data. It is particularly suited for physioligcal or functional imaging data comprised of multi volumes in a 4D (time-) series and/or multimodal imaging data. Quantiphyse is built around the concept of making spatially resolved measurements of physical or physiological processes from imaging data using either model-based or model-free methods, in a large part exploiting Bayesian inference techniques. Quantiphyse can analyse data both voxelwise or within regions of interest that may be manually or automatically created, e.g. supervoxel or clustering methods. 
 
 Features include:
 
