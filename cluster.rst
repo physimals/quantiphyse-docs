@@ -1,4 +1,4 @@
-Clustering
+K-Means Clustering
 ================
 
 Clustering uses the K-Means algorithm to cluster 3D or 4D data into discrete regions.
@@ -27,7 +27,7 @@ each cluster.
 
 .. image:: screenshots/cluster_curves.png
 
-In this case the curves show two distinct phase offsets of the signal curve.
+In this case the clusters correspond to two distinct phase offsets of the signal curve, with a third cluster picking up voxels with weak or no signal.
 
 Show voxel counts
 -----------------
