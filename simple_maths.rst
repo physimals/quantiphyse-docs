@@ -6,7 +6,7 @@ Simple maths
 This widget is a simplified version of the console and allows new data to be created from
 simple operations on existing data.
 
-The text entered must be a valie Python expression and can include the names of existing ROIs 
+The text entered must be a valid Python expression and can include the names of existing ROIs 
 and overlays which will be Numpy arrays. Numpy functions can be accessed using the ``np`` 
 namespace.
 
