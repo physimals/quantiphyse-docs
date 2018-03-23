@@ -4,7 +4,7 @@ Supervoxel widget
 This widget create supervoxels based a selected data map and a selected ROI.
 
 Supervoxels are collections of voxels which are similar in terms of both data and also
-spatial location. So, unlike clusters, supervoxels are always connected and localised.
+spatial location. So, unlike clusters, supervoxels are intended to be connected and localised.
 
 Quantiphyse uses a novel supervoxel method based on SLIC, but modified so that it can
 be applied sensibly to data within an ROI. For full method details see 
