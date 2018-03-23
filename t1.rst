@@ -1,5 +1,7 @@
-T1 mapping widget
-=================
+T1 map from VFA images
+======================
+
+*Widgets -> T1 -> VFA T1*
 
 This widget generates T1 maps from variable flip angle images. This is often used as a preprocessing step for 
 PK modelling. The VFA scans can be loaded either as separate volumes, one for each flip angle, or a single multi-volume 
