@@ -66,8 +66,6 @@ Generic analysis and processing tools
    roi_analysis
    roibuilder
    mean_values
-   batch
-   console
    
 Current included plugins
 ===============
@@ -80,5 +78,14 @@ Current included plugins
    fabber
    cest
 
-Images copyright 2016, 2017 Benjamin Irving
+Advanced Tools
+==============
+
+.. toctree::
+   :maxdepth: 1
+
+   batch
+   console
+   
+Images copyright 2018 University of Oxford
 
