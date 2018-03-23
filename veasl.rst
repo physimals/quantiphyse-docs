@@ -1,6 +1,8 @@
 VEASL
 =====
 
+*Widgets -> ASL -> VEASL*
+
 VEASL is a tool for analysing Vessel Encoded ASL MRI
 
 Options
