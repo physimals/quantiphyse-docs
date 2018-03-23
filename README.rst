@@ -3,6 +3,7 @@
 ===========
 
 .. |qplogo| image:: screenshots/qp_logo.png 
+    :height: 48px
 
 Contributors
 
