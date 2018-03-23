@@ -1,5 +1,5 @@
-DCE PK modelling widget
-=======================
+DCE PK modelling
+================
 
 *Widgets -> DCE-MRI -> PK Modelling*
 
