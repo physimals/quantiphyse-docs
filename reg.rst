@@ -1,5 +1,7 @@
-Registration and Motion Correction widget
-=========================================
+Registration and Motion Correction
+==================================
+
+*Widgets -> Processing -> Registration*
 
 This widget enables registration and motion correction using various methods. Currently implemented methods 
 are:
