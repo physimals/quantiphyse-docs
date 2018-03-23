@@ -1,7 +1,7 @@
 ROI Builder
 ===========
 
-- *Widgets -> ROI Builder*
+- *Widgets -> ROIs -> ROI Builder*
 
 This widget is designed for simple construction of regions of interest and manual segmentation. It is not 
 designed to be a replacement for sophisticated semi-automatic segmentation tools! However it is very helpful
