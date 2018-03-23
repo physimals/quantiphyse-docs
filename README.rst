@@ -4,8 +4,8 @@ Quantiphyse
 
 Contributors
 
- - `Ben Irving <mailto:mail@birving.com>`_ (Original author)
  - `Martin Craig <mailto:martin.craig@eng.ox.ac.uk>`_ (Current maintainer)
+ - `Ben Irving <mailto:mail@birving.com>`_ (Original author)
  - `Michael Chappell <mailto:michael.chappell@eng.ox.ac.uk>`_
  
 Quantiphyse is a viewing and analysis tool for 3D and 4D biomedical data. 
@@ -18,12 +18,10 @@ Features include:
  - Tools for basic ROI generation
  - Extensible via plugins, including registration/motion correction, ASL and CEST MRI data and Bayesian modelling
 
-Quantiphyse is not yet publically available although a release is planned in the near future.
-Please contact the current maintainer `martin.craig@eng.ox.ac.uk <mailto:martin.craig@eng.ox.ac.uk>`_ if you wish 
-to use the software
+Quantiphyse will soon be available via the `Oxford University Innovation Software 
+Store <https://process.innovation.ox.ac.uk/software>`_ 
 
-This documentation is based on the current development version, hence some of the information and screenshots
-may be slightly out of date due to recent development work.
+This documentation is based on the upcoming release version 0.4.
 
 .. image:: screenshots/overlay_stats.jpg
 
