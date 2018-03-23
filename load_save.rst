@@ -5,7 +5,7 @@ Loading and Saving Data
 File Formats
 ============
 
-This software package works with NIFTI volumes. Some builds may contain experimentatl support for
+This software package works with NIFTI volumes. Some builds may contain experimental support for
 folders of DICOM files, however this is not well tested.
 
 Alternative packages which are able to convert DICOM files to NIFTI include the following: 
@@ -51,10 +51,10 @@ Saving Data
 
 The following menu options are used for saving data:
 
-- File -> Save current Overlay
+- File -> Save current data
 - File -> Save current ROI
 
-So, to save a data set you need to make it the current overlay, using the Overlay menu or the Volumes
+So, to save a data set you need to make it the current data, using the Overlay menu or the Volumes
 widget. Similarly to save an ROI you need to make it the current ROI. Saving the main data can be 
 done by selecting it as the current overlay.
 
