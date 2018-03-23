@@ -32,6 +32,9 @@ Licensing details will be added on first public release. The software will be fr
 User Guide
 ----------
 
+Basic functions
+===============
+
 .. toctree::
    :maxdepth: 2
 
@@ -39,23 +42,40 @@ User Guide
    load_save
    interaction
    overlay_stats
-   curve_compare
-   compare
-   cluster
-   mean_values
+   
+Generic analysis and processing tools
+===============
+
+.. toctree::
+   :maxdepth: 2
+
    modelfit
+   compare
+   curve_compare
+   simple_maths
    reg
-   roibuilder
+   smoothing
+   cluster
    sv
+   roi_analysis
+   roibuilder
+   mean_values
+   batch
+   console
+   
+   
+Current included plugins
+===============
+
+.. toctree::
+   :maxdepth: 2
+
    t1
    pk
-   simple_maths
    fabber
    cest
    asl
    veasl
-   batch
-   console
 
 Images copyright 2016, 2017 Benjamin Irving
 
