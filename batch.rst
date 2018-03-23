@@ -38,11 +38,11 @@ Batch files are written in YAML syntax. Below is a simple example.
 
     Cases:
         Subj0001:
-            Folder:   c:\mydata\0001
+            InputFolder:   c:\mydata\0001
         Subj0003:
-            Folder:   c:\mydata\0003
+            InputFolder:   c:\mydata\0003
         Subj0003:
-            Folder:   c:\mydata\0003
+            InputFolder:   c:\mydata\0003
 
 The batch file is divided into three main sections. First we have statements to set up default options which
 will apply to all cases. In this example we are putting all output data in the ``out`` folder and enabling Debug
@@ -99,7 +99,7 @@ For example.
 
     Cases:
         Subj0001:
-            Folder:   c:\mydata\0001
+            InputFolder:   c:\mydata\0001
             # This case does not converge in 30 iterations
             Fabber:
                 max-iterations: 100
@@ -112,7 +112,7 @@ Or, if one case is causing problems we might enable debug mode just for that cas
 
     Cases:
         Subj0005:
-            Folder:   c:\mydata\0005
+            InputFolder:   c:\mydata\0005
             # What's going on here?
             Debug: True
 
@@ -140,13 +140,13 @@ example performs motion correction on the main data, followed by PK modelling:
             ve-thresh:  99.8   # Ktrans/kep percentile threshold
             tinj:       60     # Approximate injection time (s) 
 
-Artifacts
----------
+Extras
+------
 
-*Artifacts* are data created by processing modules which are not voxel data, but can be saved to a text
-file. They can be saved in the same way as data using the ``SaveArtifacts`` command. For example
+*Extras* are data created by processing modules which are not voxel data, but can be saved to a text
+file. They can be saved in the same way as data using the ``SaveExtras`` command. For example
 the ``CalcVolumes`` process calculates the volume of each region of an ROI and outputs a table 
-artifact.
+extra.
 
 ::
 
@@ -157,7 +157,7 @@ artifact.
             roi: mask
             output-name: roi_vols
 
-        - SaveArtifacts:
+        - SaveExtras:
             roi_vols:
 
     Cases:
