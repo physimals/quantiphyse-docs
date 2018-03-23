@@ -13,3 +13,5 @@ The 'Copy' button for each table copies the data to the clipboard in a tab-separ
 suitable for pasting into spreadsheets such as Excel.
 
 In addition, a radial profile and histogram can be plotted for the current data item.
+
+.. image:: screenshots/data_stats_histogram.png
