@@ -1,7 +1,9 @@
-PK modelling widget
-===================
+DCE PK modelling widget
+=======================
 
-The PK modelling widget performs Pharmacokinetic modelling using the Tofts model.
+*Widgets -> DCE-MRI -> PK Modelling*
+
+The DCE modelling widget performs pharmacokinetic modelling for Dynamic Contrast-Enhanced MRI (DCE) using the Tofts model.
 
 To use the tool you must first load a DCE-MRI volume, an ROI and a T10 overlay (named 'T10').
 
