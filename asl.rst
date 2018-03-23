@@ -1,7 +1,7 @@
 ASL Analysis
 ============
 
-- *Widgets -> Fabber -> ASL*
+- *Widgets -> ASL -> ASL Model fitting*
 
 This widget provides Arterial Spin Labelling MRI analysis using the Fabber Bayesian model fitting framework.
 
