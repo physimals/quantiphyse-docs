@@ -51,10 +51,10 @@ Saving Data
 
 The following menu options are used for saving data:
 
-- File -> Save current Overlay
+- File -> Save current data
 - File -> Save current ROI
 
-So, to save a data set you need to make it the current overlay, using the Overlay menu or the Volumes
+So, to save a data set you need to make it the current data, using the Overlay menu or the Volumes
 widget. Similarly to save an ROI you need to make it the current ROI. Saving the main data can be 
 done by selecting it as the current overlay.
 
