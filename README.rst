@@ -75,8 +75,8 @@ Current included plugins
 
    t1
    pk
-   fabber
    cest
+   fabber
 
 Advanced Tools
 ==============
