@@ -17,4 +17,4 @@ This widget shows the signal-time curve at multiple locations.
 
 .. image:: screenshots/curve_compare_mean.png
 
- - Additional plot options are available by clicking the Options button in the top right.
+Additional plot options are available by clicking the Options button in the top right.
