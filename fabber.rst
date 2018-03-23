@@ -1,5 +1,5 @@
-Fabber widget
-=============
+Fabber Bayesian modelling
+=========================
 
 *Widgets -> Fabber -> Fabber*
 
