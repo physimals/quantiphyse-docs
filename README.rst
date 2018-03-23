@@ -24,7 +24,7 @@ Store <https://process.innovation.ox.ac.uk/software>`_
 
 This documentation is based on the upcoming release version 0.4.
 
-.. image:: screenshots/overlay_stats.jpg
+.. image:: screenshots/sample_image.png
 
 License
 -------
