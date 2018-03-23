@@ -5,7 +5,7 @@ Loading and Saving Data
 File Formats
 ============
 
-This software package works with NIFTI volumes. Some builds may contain experimentatl support for
+This software package works with NIFTI volumes. Some builds may contain experimental support for
 folders of DICOM files, however this is not well tested.
 
 Alternative packages which are able to convert DICOM files to NIFTI include the following: 
