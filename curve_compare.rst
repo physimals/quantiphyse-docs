@@ -1,11 +1,11 @@
-Time series widget
-==================
+Multi-voxel analysis
+====================
 
-- The time series widget shows the signal-time curve at the currently selected location. 
+- This widget shows the signal-time curve at multiple locations.
 
 .. image:: screenshots/curve_compare_single.png
 
-- If 'Multiple curves' is selected, each click on the image adds a new curve to the plot. By changing
+- Each click on the image adds a new curve to the plot. By changing
   the colour, a series of curves can be plotted enabling different parts of the image to be compared
 
 - The mean curve for each color can also be displayed. This is shown with large circular markers and 
