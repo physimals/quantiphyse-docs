@@ -1,6 +1,8 @@
 Simple maths
 ============
 
+*Widgets -> Processing -> Simple Maths*
+
 This widget is a simplified version of the console and allows new data to be created from
 simple operations on existing data.
 
