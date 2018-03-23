@@ -1,6 +1,8 @@
 K-Means Clustering
 ================
 
+*Widgets -> Clustering -> KMeans Clustering*
+
 Clustering uses the K-Means algorithm to cluster 3D or 4D data into discrete regions.
 
 When used with 4D data, PCA reduction is used to convert the volume sequence into 3D data before K-Means
