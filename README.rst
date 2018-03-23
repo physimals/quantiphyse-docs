@@ -29,6 +29,11 @@ License
 -------
 Licensing details will be added on first public release. The software will be free for non-commercial use.
 
+Bugs/Issues
+-----------
+
+Please report bug, issues, feature requests or other comments to the  `current maintainer: <mailto:martin.craig@eng.ox.ac.uk>`_
+
 User Guide
 ----------
 
@@ -73,8 +78,6 @@ Current included plugins
    pk
    fabber
    cest
-   asl
-   veasl
 
 Images copyright 2016, 2017 Benjamin Irving
 
