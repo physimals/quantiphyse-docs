@@ -1,7 +1,7 @@
 Fabber widget
 =============
 
-- *Widgets -> Fabber*
+*Widgets -> Fabber -> Fabber*
 
 This widget allows use of the Fabber Bayesian model fitting tool within Quantiphyse. For more information 
 on the Fabber method, see:

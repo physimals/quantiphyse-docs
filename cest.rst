@@ -1,7 +1,7 @@
 QuantiCEST
 ==========
 
-- *Widgets -> Fabber -> CEST*
+- *Widgets -> CEST -> QuantiCEST*
 
 This widget provides CEST analysis using the Fabber Bayesian model fitting framework.
 
@@ -141,7 +141,7 @@ If T1/T2 values are being inferred (``Allow uncertainty in T1/T2 values`` is che
   - ``mean_T1_Water``, ``mean_T1_Amine``, ..etc - Inferred T1 values for each pool
   - ``mean_T2_Water``, ``mean_T2_Amine``, ..etc - Inferred T2 values for each pool
 
-The screenshot below shows the model fitting to the z-spectrum.
+The screenshot below (from the Voxel Analysis widget) shows the model fitting to the z-spectrum.
 
 .. image:: screenshots/cest_fitted.png
 

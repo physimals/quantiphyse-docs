@@ -1,6 +1,8 @@
 Mean value widget
 =================
 
+*Widgets -> ROIs -> Mean in ROI*
+
 The mean values widget takes an overlay and an ROI and outputs a new overlay. Within each ROI
 region, the new overlay contains the mean value of the original overlay within that region.
 
