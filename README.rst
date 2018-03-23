@@ -1,6 +1,8 @@
 ===========
-Quantiphyse 
+|qplogo| Quantiphyse 
 ===========
+
+.. |qplogo| image:: screenshots/qp_logo.png 
 
 Contributors
 
