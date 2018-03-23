@@ -1,6 +1,8 @@
 Supervoxel widget
 =================
 
+*Widgets -> Clustering -> Supervoxels*
+
 This widget create supervoxels based a selected data map and a selected ROI.
 
 Supervoxels are collections of voxels which are similar in terms of both data and also
