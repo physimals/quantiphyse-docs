@@ -14,7 +14,7 @@ Objects provided
 
 The main predefined variables are:
 
-  - ``ivm`` - The volume management object. It provides the ``add_overlay`` and ``add_roi`` methods you need
+  - ``ivm`` - The volume management object. It provides the ``add_data`` and ``add_roi`` methods you need
     to get data into the viewer
 
   - Each existing data item is a named variable - for example if you have an overlay named ``T10`` there will
@@ -28,7 +28,7 @@ Working with data
 -----------------
 
 Data objects are subclasses of Numpy arrays and can support any operations on them. To add new data into 
-the viewer you use the ``add_overlay()`` or ``add_roi()`` methods.
+the viewer you use the ``add_data()`` or ``add_roi()`` methods.
 
 Examples
 --------
@@ -37,7 +37,7 @@ Examples
 
 .. image:: screenshots/console_eg1.png
 
-This creates 5 new overlays containing the original test_data plus random Gaussian noise with mean 0 
+This creates 5 new data sets containing the original test_data plus random Gaussian noise with mean 0 
 and standard deviations between 1000 and 5000.
 
 .. image:: screenshots/console_eg1_out.png
