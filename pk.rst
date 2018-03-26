@@ -14,7 +14,7 @@ Image acquisition parameters are set using the GUI controls. Once these are corr
 modelling process. This could take some time, depending on your data, the progress bar is updated in
 chunks.
 
-*Start of modelling*
+*Start of modelling, showing loaded T10 map*
 
 .. image:: screenshots/pk_start.png
 
