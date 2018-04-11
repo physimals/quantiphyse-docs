@@ -20,9 +20,11 @@ Features include:
 
  - 2D orthographic viewing and navigation of data, regions of interest (ROIs) and overlays
  - Universal analysis tools including clustering, supervoxel generation and curve comparison
- - Tools for DCE-MRI pharmacokinetic modelling
+ - Tools for CEST-MRI analysis and modelling
+ - Tools for DCE-MRI analysis and modelling
  - Tools for ROI generation
- - Extensible via plugins, including registration/motion correction, ASL and CEST MRI data and Bayesian modelling
+ - Registration and motion correction
+ - Extensible via plugins, in the future to include ASL MRI data and Bayesian modelling and more
 
 Quantiphyse will soon be available via the `Oxford University Innovation Software 
 Store <https://process.innovation.ox.ac.uk/software>`_ 
