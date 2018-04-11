@@ -1,5 +1,5 @@
 ===========
-|qplogo| Quantiphyse 
+|qplogo| Quantiphyse 0.4
 ===========
 
 .. |qplogo| image:: screenshots/qp_logo.png 
