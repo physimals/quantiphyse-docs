@@ -29,7 +29,7 @@ Features include:
 Quantiphyse will soon be available via the `Oxford University Innovation Software 
 Store <https://process.innovation.ox.ac.uk/software>`_ 
 
-This documentation is based on the upcoming release version 0.4.
+This documentation is based on the latest development version
 
 License
 -------
