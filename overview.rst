@@ -20,22 +20,36 @@ however you can set any data set to be the main volume.
 Data orientation
 ----------------
 
-The internal grid used for analysis steps is defined by the original grid of the main data set. However
-the axes are transposed and/or flipped in order to make the internal representation in approximate
-RAS orientation.
+Quantiphyse keeps all data loaded from files in it's original order and orientation. For display purposes, it takes 
+the following steps to display data consistently:
 
-For data sets defined on different grids, Quantiphyse resamples all data onto the same grid as the main data
-so that analysis steps can be carried out consistently. So, while different resolutions/orientations can be
-displayed simultaneously, resolution may be reduced and there may be artifacts associated with the 
-resampling.
+ - A display grid is derived from the grid on which the main data is defined. This is done by flipping and transposing
+   axes only so the resulting grid is in approximate RAS orientation. This is the *display grid* and ensures that the
+   right/left/anterior/posterior/superior/inferior labels are in a consistent location in the viewer. Note that the 
+   main data does *not* need resampling on to the display grid as only transpositions and flips have occured.
+   
+ - Data which is defined on a different grid will be displayed relative to the display grid. If possible this is done
+   by taking orthogonal slices through the data and applying rotations and translations for display. In this case
+   no resampling is required for display.
+   
+ - If the data cannot be displayed without taking a non-orthogonal slice, this is done by default using nearest
+   neighbour interpolation. This is fast, and ensures that all displayed voxels represent 'real' raw data values.
+   However, display artifacts may be visible where the nearest neighbour changes from one slice to another.
+   
+ - To avoid this, the viewer options allow for the use of linear interpolation for slicing. This is slightly slower
+   but produces a more natural effect when viewing data items which are not orthogonally oriented.
+   
+ - The main data is, by default, the first data loaded, however any data set can be set as the main data.
+ 
+It is important to reiterate that these steps are done for *display* only and do not affect the raw data which is 
+always retained.
 
-The intention is to move to a more flexible model in the future where visualisation always uses the original 
-source data/resolution/orientation and resampling onto a standard grid only occurs where necessary 
-for an analysis tool.
-
-.. warning::
-    Display of 2D slice data within a 3D volume is not well handled currently due to difficulties with
-    resampling this type of data. However working with consistently 2D data should not pose a problem.
+Analysis processes often require the use of multiple data items all defined on the same grid. When this occurs,
+typically they will resample all the data onto a single grid (usually the grid on which the 'main' data being
+analysed is defined). For example if fitting a model to an ASL dataset using a T1 map defined on a different grid, 
+the T1 would be resampled to the grid of the ASL dataset. Normally this would be done with linear interpolation 
+however cubic resampling is also available. This is the decision of the analysis process. The output data would 
+then typically be defined on the same grid, however again this is the choice of the analysis process.
 
 Special cases
 -------------
@@ -46,12 +60,9 @@ processed properly.
 *Multi-volume 2D data*
 
 Some data files may be 3 dimensional, but must be interpreted as multiple 2D volumes (e.g. a time
-series) rather than a single static 3D volume.
-
-If a 3D data set is loaded first, an option is available to interpret the data as 2D multi-volumes. If 2D data 
-is already loaded (either single or multiple volumes), subsequent 3D data sets will be interpreted as 2D 
-multiple volume data sets if that enables them to be loaded (i.e. if the third dimension is consistent with
-other loaded data sets).
+series) rather than a single static 3D volume. When a 3D data set is loaded, an option is available to 
+interpret the data as 2D multi-volumes. To access this option, click the ``Advanced`` checkbox in the
+data choice window.
 
 .. note::
     In Nifti files the first 3 dimensions are required to be spatial, so where this occurs with a Nifti
