@@ -91,6 +91,7 @@ Advanced Tools
 
    batch
    console
+   nifti_extensions
    
 Images copyright 2018 University of Oxford
 
