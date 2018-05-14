@@ -4,7 +4,7 @@ NIFTI metadata extension
 Quantiphyse stores various metadata about its data sets which it would be useful to persist across loading and saving. 
 The NIFTI format provides for this in the form of 'header extensions'.
 
-This requires a code to be assigned for the use of Quantiphyse.
+Each header extension is identified by a code number so software can choose to pay attention only to header extensions that it knows about. Quantiphyse has been assigned the code ``42`` for its header extensions.
  
 Quantiphyse extensions will be stored as strings in YAML format for easy serialization/deserialization to Python
 and because YAML is already used as the basis for the batch format.
