@@ -12,6 +12,11 @@ Contributors
  - `Michael Chappell <mailto:michael.chappell@eng.ox.ac.uk>`_
  - Paula Croal
 
+Acknowledgements
+
+ - Julia Schnabel
+ - Sir Mike Brady
+
 Quantiphyse is a viewing and analysis tool for 3D and 4D biomedical data. It is particularly suited for physiological or functional imaging data comprised of multi volumes in a 4D (time-) series and/or multimodal imaging data. Quantiphyse is built around the concept of making spatially resolved measurements of physical or physiological processes from imaging data using either model-based or model-free methods, in a large part exploiting Bayesian inference techniques. Quantiphyse can analyse data both voxelwise or within regions of interest that may be manually or automatically created, e.g. supervoxel or clustering methods. 
 
 .. image:: screenshots/sample_image.png
