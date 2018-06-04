@@ -87,6 +87,7 @@ Current included plugins
    pk
    cest
    fabber
+   asl_overview
 
 Advanced Tools
 ==============
