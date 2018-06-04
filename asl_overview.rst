@@ -8,7 +8,7 @@ fitting framework.
 
  - ASL preprocessing - basic preprocessing of ASL data such as tag-control subtraction and generation of perfusion-weighted images
  - ASL model fitting - Bayesian model fitting for ASL data generating parameter maps for perfusion, arrival time and other parameters
- - `Multiphase ASL multiphase_asl`_ - Pre-processing step for multiphase ASL producing output suitable for standard ASL model fitting
+ - :ref:`multiphase_asl` - Pre-processing step for multiphase ASL producing output suitable for standard ASL model fitting
  
 Defining the basic ASL data structure
 --------------------
