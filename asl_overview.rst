@@ -6,10 +6,10 @@ ASL Analysis
 A number of widgets are provided for use in processing Arterial Spin Labelling MRI analysis using the Fabber Bayesian model 
 fitting framework.
 
- - ASL preprocessing - basic preprocessing of ASL data such as tag-control subtraction and generation of perfusion-weighted images
- - ASL model fitting - Bayesian model fitting for ASL data generating parameter maps for perfusion, arrival time and other parameters
- - :ref:`multiphase_asl` - Pre-processing step for multiphase ASL producing output suitable for standard ASL model fitting
- 
+ - `ASL preprocessing <asl_preproc.rst>`_ - basic preprocessing of ASL data such as tag-control subtraction and generation of perfusion-weighted images
+ - `ASL model fitting <asl_modelling.rst>`_ - Bayesian model fitting for ASL data generating parameter maps for perfusion, arrival time and other parameters
+ - `Multiphase ASL <multiphase_asl.rst>`_ - Pre-processing step for multiphase ASL producing output suitable for standard ASL model fitting
+
 Defining the basic ASL data structure
 --------------------
 
