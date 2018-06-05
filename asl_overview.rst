@@ -10,6 +10,13 @@ fitting framework.
  - `ASL model fitting <asl.rst>`_ - Bayesian model fitting for ASL data generating parameter maps for perfusion, arrival time and other parameters
  - `Multiphase ASL <asl_multiphase.rst>`_ - Pre-processing step for multiphase ASL producing output suitable for standard ASL model fitting
 
+.. toctree::
+   :maxdepth: 2
+
+   asl_preproc
+   asl
+   asl_multiphase
+   
 Defining the basic ASL data structure
 --------------------
 
