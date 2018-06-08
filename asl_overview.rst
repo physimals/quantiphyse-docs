@@ -11,10 +11,9 @@ fitting framework.
  - `Multiphase ASL <asl_multiphase.rst>`_ - Pre-processing step for multiphase ASL producing output suitable for standard ASL model fitting
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    asl_preproc
-   asl
    asl_multiphase
    
 Defining the basic ASL data structure
