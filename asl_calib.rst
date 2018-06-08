@@ -34,7 +34,24 @@ Voxelwise calibration
 
 .. image:: screenshots/asl_calib_voxelwise.png
 
+Voxelwise calibration requires a generic estimate of the T1 and the partition coefficient which will be applied to
+all voxels.
+
 Reference region calibration
 ---------------------
 
 .. image:: screenshots/asl_calib_refregion.png
+
+The reference region method requires a ``Reference ROI`` which identifies a particular tissue type. This would normally be 
+created by a segmentation tool such as FAST, however you could also use the ``ROI Builder`` to identify a region of the
+calibration image of a known tissue type. CSF is the most common.
+
+The T1, T2 and partition coefficient for this tissue type must be specified. Default values are provided for CSF, WM and GM.
+In addition the sequence TE and blood T1 estimates are required.
+
+Output
+------
+
+Calibration returns a new data set with the suffix ``_calib``, for example ``perfusion_calib``.
+
+
