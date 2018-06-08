@@ -1,7 +1,7 @@
 ASL Analysis
 ============
 
-- *Widgets -> ASL -> ASL Model fitting*
+- *Widgets -> ASL -> Model fitting*
 
 This widget provides Arterial Spin Labelling MRI analysis using the Fabber Bayesian model fitting framework.
 
@@ -11,17 +11,22 @@ To do ASL analysis you will need to know the following:
  - The ordering of the volume sequence in your data (e.g. whether tag-control pairs occur together, or whether all the tags come first)
  - Details of the aquisition sequence (e.g. number of TIs/PLDs used and their values, bolus durations, number of repeats etc)
 
-Preprocessing
--------------
+Basic data structure
+--------------------
 
-Preprocessing consists of manipulating the data so that is in the form of subtracted Tag-Control difference volumes ordered initially by varying TIs/PLDs, and secondarily by repeats
+Before any ASL processing can occur, the basic structure of the input data must be defined.
 
 .. image:: screenshots/asl_preprocess_options.png
 
-First choose the data format - Tag-control pairs, tag-control subtracted or multiphase. If your data is tag-control pairs, you must
-specify which comes first - Tag or Control. You should also indicate the number of TIs/PLDs used although the values will only be needed later.
+Labelling format
+################
 
-The data grouping is critical. For example the sequence of volumes in your data might be as follows:
+The labelling can be described as Tag-control pairs, Control-Tag pairs, already tag-control subtracted or multiphase. Note that this widget does not support multiphase data, however an alternative ASL widget allows multiphase data to be preprocessed for subsequent model fitting.
+
+Data grouping/order
+###################
+
+This describes the sequence of volumes contained in the ASL data set, and what each volume contains. For example the sequence of volumes in your data might be as follows:
 
  - Tag for first TI
  - Control for first TI
@@ -52,30 +57,35 @@ This would be described as Repeats (outermost), CT pairs, TIs (innermost), and w
 
 .. image:: screenshots/asl_grouping_rpt.png
 
-When the grouping is set up correctly, click ``Preprocess`` to perform the tag-control subtraction. The code will check that the number of TIs and pairs is consistent with the number of data volumes, for example if you have two TIs and tag-control pairs the number of volumes must be a multiple of 4.
+Labelling method
+################
 
-The subtracted data will be named ``asldata`` and becomes the main data in the interface. Here's an example:
+The labelling method is either cASL/pcASL or pASL. In cASL/pcASL, the effective TI for each volume is determined by adding the post-labelling delay (PLD) to the bolus duration. In pASL, the TIs are specified directly.
 
-.. image:: screenshots/asl_diffdata.png
+Readout options
+###############
 
-ASL data can be very noisy!
+If the readout was 2D, the delay time per slice can be specified to enable the timing of each slice to be determined more accurately. It is also possible to specify a multiband readout.
 
-Analysis
---------
+TI/PLD options
+##############
 
-For the analysis a little more information about the aquisition sequence is first required:
+The TIs or PLDs recorded in the ASL data must be specified, with the corresponding bolus durations.
+
+Model fitting options
+---------------------
+
+For the model fitting, some additional information is required
 
 .. image:: screenshots/asl_aquisition_options.png
 
-Of course the number of TIs/PLDs specified must match the number specified in the preprocessing step. The bolus durations may be provided as a single number, assumed to be the same for each TI/PLD, or may be provided as one per TI/PLD.
-
-A number of additional analysis options are available:
+In addition, a number of options may be specified for the model fitting process.
 
 .. image:: screenshots/asl_analysis_options.png
 
-  - ``Spatial regularization`` will smooth the data using an adaptive method which depends on the degree of variation in the data
+  - ``Spatial regularization`` will smooth the data using an adaptive method which depends on the degree of variation in the data.
   - ``Allow uncertainty in T1 values`` will use the supplied T1 values as prior information, but allow some variation to fit the data better.
-  - ``Include macro vascular component`` 
+  - ``Include macro vascular component`` will allow an additional arterial component in the fitting process.
   - ``Fix bolus duration`` Normally the bolus duration is allowed some variation to better fit the data. Selecting this option will fix it to the user specified value.
   
 .. warning::
@@ -88,8 +98,8 @@ Output data
 
 The following data items are returned:
 
-  - ``mean_ftiss`` Tissue perfusion
-  - ``mean_tau`` Inferred bolus duration (unless ``Fix bolus duration`` is specified)
+  - ``perfusion`` Tissue perfusion
+  - ``arrival`` Inferred bolus arrival time
   - ``modelfit`` Model prediction for comparison with the tag-control differenced data
   
 If ``Include macro vascular component`` is specified:
