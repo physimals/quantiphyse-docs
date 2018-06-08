@@ -24,7 +24,7 @@ you load the data back into Quantiphyse.
 Labelling format
 ################
 
-The labelling can be described as Label-control pairs, Control-Label pairs, already tag-control subtracted or multiphase. Note that not all labelling methods are supported by all ASL widgets, for example to work with multiphase data you will need to preprocess it using the `Multiphase ASL widget <asl_multiphase.rst>`_.
+The labelling can be described as Label-control pairs, Control-Label pairs, already tag-control subtracted or multiphase. Note that not all labelling methods are supported by all ASL widgets, for example to work with multiphase data you will need to preprocess it using the `Multiphase ASL widget <asl_multiphase.html>`_.
 
 Data grouping/order
 ###################
