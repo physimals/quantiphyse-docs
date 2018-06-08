@@ -8,7 +8,7 @@ This widget provides Arterial Spin Labelling MRI analysis using the Fabber Bayes
 ASL data structure
 ------------------
 
-To do ASL model fitting you will need to define the structure of your ASL data, using the `ASL structure widget <asl_struc.rst>`_
+To do ASL model fitting you will need to define the structure of your ASL data, using the `ASL structure widget <asl_struc.html>`_
 
 Model fitting options
 ---------------------
