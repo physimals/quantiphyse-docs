@@ -21,12 +21,13 @@ In addition, a number of options may be specified for the model fitting process 
 
 .. image:: screenshots/asl_analysis_options.png
 
-  - ``Bolus arrival time`` is an estimate - with multi-PLD data it's actual value will be estimated based on the data.
-  - ``T1`` and ``T1b`` are estimated T1 values for tissue and blood. By default these are fixed, however the ``Allow uncertainty
-    in T1 values`` option will cause them to be estimated from the data, using the specified values as Bayesian priors.
-  - ``Spatial regularization`` will smooth the data using an adaptive method which depends on the degree of variation in the data.
-  - ``Include macro vascular component`` will allow an additional arterial component in the fitting process.
-  - ``Fix bolus duration`` Normally the bolus duration is allowed some variation to better fit the data. Selecting this option will fix it to the user specified value.
+
+- ``Bolus arrival time`` is an estimate - with multi-PLD data it's actual value will be estimated based on the data.
+- ``T1`` and ``T1b`` are estimated T1 values for tissue and blood. By default these are fixed, however the ``Allow uncertainty
+  in T1 values`` option will cause them to be estimated from the data, using the specified values as Bayesian priors.
+- ``Spatial regularization`` will smooth the data using an adaptive method which depends on the degree of variation in the data.
+- ``Include macro vascular component`` will allow an additional arterial component in the fitting process.
+- ``Fix bolus duration`` Normally the bolus duration is allowed some variation to better fit the data. Selecting this option will fix it to the user specified value.
   
 .. warning::
     ``Spatial regularization`` prevents Fabber from processing voxels in parallel, hence this part of the analysis will be much slower that the other steps on multi-core systems.
@@ -65,4 +66,5 @@ With spatial regularization turned on, the same data set produced the following 
 
 .. image:: screenshots/asl_perfusion_svb.png
 
-
+The effect is similar to what you would get by applying a smoothing algorithm to the output, however in this case the 
+degree of smoothing is determined by the the variation in the data itself.
