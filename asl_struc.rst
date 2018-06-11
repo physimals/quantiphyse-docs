@@ -30,37 +30,41 @@ Data grouping/order
 ###################
 
 This describes the sequence of volumes contained in the ASL data set, and what each volume contains. For example the sequence of volumes in your data might be as follows:
+::
 
- - Tag for first TI
- - Control for first TI
- - Tag for second TI
- - Control for second TI
- - ... as above for remaining TIs
- - Repeat of Tag for first TI
- - Repeat of Control for first TI
- - ... etc
+  1. Tag for first TI
+  2. Control for first TI
+  3. Tag for second TI
+  4. Control for second TI
+     ... as above for remaining TIs
+  11. Repeat of Tag for first TI
+  12. Repeat of Control for first TI
+      ... etc
  
 The data grouping box enables you to choose how the Tag-Control pairs, the repeats and the TIs are ordered in your data. You can use 
 the Up/Down buttons to move the grouping order. To make this easier, a visualisation is shown below. For example the  ordering 
-described above would be described as Repeats (outermost), TIs, TC pairs (innermost), and would be shown as follows:
+described above would be described as TC pairs (innermost), TIs, Repeats (outermost), and would be shown as follows:
 
 .. image:: screenshots/asl_grouping_rtp.png
 
 Alternatively the same data might be in a different order:
+::
 
- - Control for first TI
- - Control for second TI
- - ... as above for remaining TIs
- - Tag for first TI
- - Tag for second TI
- - ... as above for remaining TIs
- - Repeat of Control for first TI
- - Repeat of Control for second TI
- - ... etc
+ 1. Control for first TI
+ 2. Control for second TI
+    ... as above for remaining TIs
+ 6. Tag for first TI
+ 7. Tag for second TI
+    ... as above for remaining TIs
+ 11. Repeat of Control for first TI
+ 12. Repeat of Control for second TI
+     ... etc
 
-This would be described as Repeats (outermost), CT pairs, TIs (innermost), and would be shown as follows:
+This would be described as TIs (innermost), CT pairs, Repeats (outermost), and would be shown as follows:
 
 .. image:: screenshots/asl_grouping_rpt.png
+
+For examples of the signal curves expected for different types of ordering, see the `ASL preprocessing widget <asl_preproc.html>`_
 
 Labelling method
 ################
