@@ -56,7 +56,7 @@ Calibration returns a new data set with the suffix ``_calib``, for example ``per
 
 .. image:: screenshots/asl_calib_compare_refregion.png
 
-In voxelwise calibration this is not the case although there should still be a linear relationship in the areas of interest - the comparison below is within a brain mask:
+In voxelwise calibration this is not the case although there should still be an approximate linear relationship in the areas of interest - the comparison below is within a brain mask:
 
 .. image:: screenshots/asl_calib_compare_voxelwise.png
 
