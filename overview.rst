@@ -20,7 +20,7 @@ however you can set any data set to be the main volume.
 Data orientation
 ----------------
 
-Quantiphyse keeps all data loaded from files in it's original order and orientation. For display purposes, it takes 
+Quantiphyse keeps all data loaded from files in its original order and orientation. For display purposes, it takes 
 the following steps to display data consistently:
 
  - A display grid is derived from the grid on which the main data is defined. This is done by flipping and transposing
@@ -45,7 +45,7 @@ It is important to reiterate that these steps are done for *display* only and do
 always retained.
 
 Analysis processes often require the use of multiple data items all defined on the same grid. When this occurs,
-typically they will resample all the data onto a single grid (usually the grid on which the 'main' data being
+typically they will resample all the data onto a single grid (usually the grid on which the main data being
 analysed is defined). For example if fitting a model to an ASL dataset using a T1 map defined on a different grid, 
 the T1 would be resampled to the grid of the ASL dataset. Normally this would be done with linear interpolation 
 however cubic resampling is also available. This is the decision of the analysis process. The output data would 
