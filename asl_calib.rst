@@ -3,7 +3,7 @@ ASL Calibration
 
 - *Widgets -> ASL Calibration*
 
-The ASL Calibration widget is required to turn the perfusion images from ASL model fitting into physical units.
+The ASL Calibration widget is required to turn the perfusion images from ASL model fitting into physical units (ml/100g/min).
 
 Basic data specification
 ------------------------
@@ -52,6 +52,14 @@ In addition the sequence TE and blood T1 estimates are required.
 Output
 ------
 
-Calibration returns a new data set with the suffix ``_calib``, for example ``perfusion_calib``.
+Calibration returns a new data set with the suffix ``_calib``, for example ``perfusion_calib``. In the case of reference region calibration, the calibrated image will simply be a scaled copy of the original perfusion image - as shown if we use the ``Compare Data`` widget:
+
+.. image:: screenshots/asl_calib_compare_refregion.png
+
+In voxelwise calibration this is not the case although there should still be a linear relationship in the areas of interest - the comparison below is within a brain mask:
+
+.. image:: screenshots/asl_calib_compare_voxelwise.png
+
+
 
 
