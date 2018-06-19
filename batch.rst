@@ -175,6 +175,53 @@ output is a tab-separated file which can be loaded into a spreadsheet.
 Building batch files from the GUI
 ---------------------------------
 
+It can be convenient to build up a batch process during the course of an interactive session, for example to try
+out processing steps on a sample dataset and record the selected steps for later application to a group of
+cases. Quantiphyse provides some basic features to facilitate this.
+
+The `Batch Button`
+~~~~~~~~~~~~~~~~~~
+
+Many widgets support a `Batch Button` which is normally located in the top right corner, level with the widget title:
+
+.. image:: screenshots/batch_button.png
+
+Clicking the batch button pops up a window containing the batch file code for the analysis process currently defined by
+the widget's GUI controls. For example, here is the result of clicking the batch button on the ASL model fitting widget
+after we have set up a multi-PLD analysis:
+
+.. image:: screenshots/batch_code_dialog.png
+
+The ``Copy`` button copies this code to the clipboard where it can be pasted into a batch script that you are creating
+in a text editor, or using the ``Batch Builder`` widget (see below).
+
+The `Batch Builder` widget
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This widget is available from the 'Utilities' menu and gives a simple editor for batch scripts.
+
+When first opened, a skeleton batch script will be generated which loads all currently opened data files and then 
+saves all new data created during the batch script (using the ``SaveAllExcept`` process). Here's an example after we've
+loaded some ASL data:
+
+.. image:: screenshots/batch_builder.png
+
+This script will not do anything else, however we can copy batch code from widgets using the batch button and paste it
+where the script says: ``# Additional processing steps go here``. So we could paste the ASL analysis code shown above:
+
+.. image:: screenshots/batch_builder_asl.png
+
+This batch script can be ``Run`` to test it, and then we use ``Save`` to save it to a file when we're happy. You can add
+cases and other processing as required. ``Reset`` will return to the 'skeleton' batch script with no custom processing.
+
+The batch builder will indicate if your file contains any syntax errors, for example if we don't indent our processing steps
+correctly:
+
+.. image:: screenshots/batch_builder_syntax_error.png
+
+One common issue is the use of tabs in a batch file which is not allowed but can cause difficult to interpret errors. Therefore,
+if you use a tab character in the batch builder it will check and simply give a warning of ``Tabs detected``.
+
 Future extensions
 -----------------
 
