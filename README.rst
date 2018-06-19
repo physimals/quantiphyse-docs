@@ -31,14 +31,15 @@ Features include:
  - Registration and motion correction
  - Extensible via plugins, in the future to include ASL MRI data and Bayesian modelling and more
 
-Quantiphyse will soon be available via the `Oxford University Innovation Software 
+Quantiphyse is available via the `Oxford University Innovation Software 
 Store <https://process.innovation.ox.ac.uk/software>`_ 
 
-This documentation is based on the latest development version
+This documentation is based on version 0.6
 
 License
 -------
-Licensing details will be added on first public release. The software will be free for non-commercial use.
+Quantiphyse is available free under an academic (non-commercial) license. See the `OUI Software 
+Store <https://process.innovation.ox.ac.uk/software>`_  for more details. 
 
 Bugs/Issues
 -----------
