@@ -27,6 +27,7 @@ Features include:
  - Universal analysis tools including clustering, supervoxel generation and curve comparison
  - Tools for CEST-MRI analysis and modelling
  - Tools for DCE-MRI analysis and modelling
+ - Tools for ASL-MRI analysis and modelling
  - Tools for ROI generation
  - Registration and motion correction
  - Extensible via plugins, in the future to include ASL MRI data and Bayesian modelling and more
