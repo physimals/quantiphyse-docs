@@ -19,11 +19,6 @@ Acknowledgements
 
 Quantiphyse is a viewing and analysis tool for 3D and 4D biomedical data. It is particularly suited for physiological or functional imaging data comprised of multi volumes in a 4D (time-) series and/or multimodal imaging data. Quantiphyse is built around the concept of making spatially resolved measurements of physical or physiological processes from imaging data using either model-based or model-free methods, in a large part exploiting Bayesian inference techniques. Quantiphyse can analyse data both voxelwise or within regions of interest that may be manually or automatically created, e.g. supervoxel or clustering methods. 
 
-BCISMRM CEST tutorial
----------------------
-
- - `Tutorial and data <cest_tutorial.html>`_
-
 .. image:: screenshots/sample_image.png
 
 Features include:
@@ -50,6 +45,11 @@ Bugs/Issues
 -----------
 
 Please report bug, issues, feature requests or other comments to the  `current maintainer: <mailto:martin.craig@eng.ox.ac.uk>`_
+
+BCISMRM CEST tutorial
+---------------------
+
+ - `Tutorial and data <cest_tutorial.html>`_
 
 User Guide
 ----------
