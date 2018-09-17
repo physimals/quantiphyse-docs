@@ -46,6 +46,11 @@ Bugs/Issues
 
 Please report bug, issues, feature requests or other comments to the  `current maintainer: <mailto:martin.craig@eng.ox.ac.uk>`_
 
+CEST tutorial
+-------------
+
+ - `Tutorial and data <cest_tutorial.html>`_
+
 User Guide
 ----------
 
