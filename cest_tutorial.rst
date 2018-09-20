@@ -53,8 +53,6 @@ within Quantiphyse, select ``Widgets`` ->  ``Processing`` -> ``Registration``. A
 to set the reference volume to an unsaturated image, so we have set the ``Reference Volume`` to a ``Specified volume``
 of 0. 
 
-The motion correction can be applied to the brain mask by selecting it to be a ``Linked ROI``.
-  
 .. image:: screenshots/cest_tutorial_2.png
 
 Visualising Data
