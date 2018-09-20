@@ -170,7 +170,10 @@ output of the data with the baseline removed is shown.
 Running QuantiCEST from the command line
 ----------------------------------------
 
-Here we have covered basic model-based analysis of CEST data using the interactive GUI. For some, it may be more desirable to automate this analysis so that it can be run from the command line. While beyond the scope of this tutorial, it can be set up relatively simply, with batch processing options for your given analysis provided within the QuantiCEST widget via the following icon  . More details can be found on the quantiphyse website. 
+Here we have covered basic model-based analysis of CEST data using the interactive GUI. For some, it may be more desirable to automate this analysis so that it can be run from the command line. While beyond the scope of this tutorial, it can be set up relatively simply, with batch processing options for your given analysis provided within the QuantiCEST widget via the following icon |batchbutton|. More details can be found on the quantiphyse website. 
+
+.. |batchbutton| image:: screenshots/batch_button.png 
+
 References: 
 
 .. [1] Chappell et al., Quantitative Bayesian model‐based analysis of amide proton transfer MRI, Magnetic Resonance in Medicine, 70(2), (2013).
