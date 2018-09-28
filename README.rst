@@ -31,10 +31,12 @@ Features include:
  - Registration and motion correction
  - Extensible via plugins, in the future to include ASL MRI data and Bayesian modelling and more
 
+This documentation is based on the latest development version
+
+Download
+--------
 Quantiphyse is available via the `Oxford University Innovation Software 
 Store <https://process.innovation.ox.ac.uk/software>`_ 
-
-This documentation is based on the latest development version
 
 License
 -------
