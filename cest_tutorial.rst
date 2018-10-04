@@ -15,10 +15,6 @@ Loading Data
 A link to the data used in this tutorial is given below. The data and additional processing files are provided in
 a self-extracting encrypted ZIP file - the password will be provided at the tutorial.
 
- - `Encrypted ZIP file (For Linux/Mac): <https://unioxfordnexus-my.sharepoint.com/:u:/g/personal/ctsu0221_ox_ac_uk/EUkP9jm0Y2ZFq6vc1jOvWf4BVqATfeJKQ3Gi-ybQNiqx_A?e=WqCaEd>`_
- 
- - `Self-extracting encrypted EXE (For Windows without 7-ZIP) <https://unioxfordnexus-my.sharepoint.com/:u:/g/personal/ctsu0221_ox_ac_uk/EVp6AQUJVTlLtGHS1tPlVtkBC4WJ4yDzN6K37nsL_lX9Lg?e=oqkQjS>`_
-
 Files can be loaded in NIFTI or DICOM format either by dragging and dropping in to the view pane, or by clicking 
 ``File`` -> ``Load Data`` and navigate to the appropriate file. Confirm that the file is ``Data`` rather than 
 ``ROI`` and proceed. 
