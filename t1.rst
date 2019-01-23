@@ -7,6 +7,8 @@ This widget generates T1 maps from variable flip angle images. This is often use
 kinetic modelling. The VFA scans can be loaded either as separate volumes, one for each flip angle, or a single multi-volume 
 file containing all the flip angles.
 
+The main VFA method is described in [1]_.
+
 Using a single 4D volume with multiple flip angles
 --------------------------------------------------
 
@@ -28,11 +30,12 @@ the file name, but ensure it has guessed correctly!)
 
 .. image:: screenshots/t1_single_fa.png
 
-Using a B0 correction
+Using a B1 correction
 ---------------------
 
-This option allows for correction of field inhomogeneity and B0 effects using Actual Flip Angle Imaging (AFI) data sets.
-This is particularly common where high field strengths are used, for example in preclinical applications.
+This option allows for correction of field inhomogeneity and B1 effects using Actual Flip Angle Imaging (AFI) data sets.
+This is particularly common where high field strengths are used, for example in preclinical applications. The method is described 
+in [2]_
 
 These are loaded in the same way as the VFA data described above, however in this case you must enter the TR value for each
 file in ms (or a sequence of TR values if the AFI data is stored in a single 4D data set).
@@ -55,3 +58,9 @@ Clamping the T1 values
 
 The output T1 values may be clamped between limits if required - this may be useful to eliminate unrealistic values in a small number 
 of voxels.
+
+References 
+----------
+
+.. [1] Fram et al., Magn Reson Imaging 5(3): 201-208 (1987)
+.. [2] Yarnykh, V. L. (2007), Actual flip‐angle imaging in the pulsed steady state: A method for rapid three‐dimensional mapping of the transmitted radiofrequency field. Magn. Reson. Med., 57: 192-200. doi:10.1002/mrm.21120
