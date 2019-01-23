@@ -1,65 +1,55 @@
-ASL Calibration
-===============
+ASL Calibration tab
+===================
 
-- *Widgets -> ASL Calibration*
+Without calibration, perfusion values from ASL modelling are relative only and cannot be compared
+between subjects or sessions. By providing calibration data the perfusion can be output in 
+physical units (ml/100g/min) allowing comparisons to be made.
 
-The ASL Calibration widget is required to turn the perfusion images from ASL model fitting into physical units (ml/100g/min).
+Two calibration methods are provided: *Voxelwise* and *Reference region*. In both cases you
+must provide a calibration image and may override the default acquisition parameters for this
+image:
 
-Basic data specification
-------------------------
-
-.. image:: screenshots/asl_calib_data.png
-
-To do calibration you specify a data set containing a perfusion image. If you want to calibrate an image containing perfusion
-variance, the ``Data type`` selection must be changed (because the scaling factors must be squared in this case).
-
-Calibration methods
--------------------
-
-Two calibration methods are provided:
-
-- ``Voxelwise`` calibration, in which an M0 correction factor is determined for each voxel from the calibration image.
-- ``Reference region`` calibration, in which a single M0 correction factor is determined for the whole image, by analysing a 
-  region of the data containing a single tissue type (typically CSF).
-  
-Calibration data
-----------------
-
-Certain parameters are required regardless of which calibration method you use:
-
-.. image:: screenshots/asl_calib_calibdata.png
+.. image:: screenshots/asl_calib_generic.png
 
 Voxelwise calibration
 ---------------------
 
+In voxelwise calibration, the calibration image is converted to an M0 image and each voxel in the 
+perfusion data is scaled by the voxelwise M0 value in the M0 image.
+
 .. image:: screenshots/asl_calib_voxelwise.png
 
-Voxelwise calibration requires a generic estimate of the T1 and the partition coefficient which will be applied to
-all voxels.
+This requires two parameters, a notional T1 value for generic 'tissue' and a similar generic
+partition coefficient. The values given are from standard literature, however they can be
+modified if needed.
 
 Reference region calibration
----------------------
+----------------------------
+
+In reference region calibration a *single* M0 correction factor is determined for the whole image, 
+by analysing a region of the data containing a single tissue type (typically CSF).
 
 .. image:: screenshots/asl_calib_refregion.png
 
-The reference region method requires a ``Reference ROI`` which identifies a particular tissue type. This would normally be 
-created by a segmentation tool such as FAST, however you could also use the ``ROI Builder`` to identify a region of the
-calibration image of a known tissue type. CSF is the most common.
+In order to do this, the reference region method requires an ROI which identifies a particular 
+tissue type. By default this is calculated automatically for CSF using the following outline method:
 
-The T1, T2 and partition coefficient for this tissue type must be specified. Default values are provided for CSF, WM and GM.
-In addition the sequence TE and blood T1 estimates are required.
+ - Obtain the CSF mask from segmentation of the structural image
+ - Register the structural image to a standard MNI brain image
+ - Obtain (from standard atlases) the ventricle mask for the standard brain image
+ - Erode the ventricle mask by 1 voxel and use it to mask the CSF mask from the structural image
+ - Transform back into structural space and form the reference region mask by conservatively
+   thresholding the ventricle mask at a threshold of 0.9
+   
+If a tissue type other than CSF is selected, only the first of these steps is performed.
 
-Output
-------
+You may prefer to supply a ready made reference ROI. This can be done using the ``Custom reference
+ROI`` option:
 
-Calibration returns a new data set with the suffix ``_calib``, for example ``perfusion_calib``. In the case of reference region calibration, the calibrated image will simply be a scaled copy of the original perfusion image - as shown if we use the ``Compare Data`` widget:
+.. image:: screenshots/asl_calib_refregion_custom_roi.png
 
-.. image:: screenshots/asl_calib_compare_refregion.png
-
-In voxelwise calibration this is not the case although there should still be an approximate linear relationship in the areas of interest - the comparison below is within a brain mask:
-
-.. image:: screenshots/asl_calib_compare_voxelwise.png
-
-
+The T1, T2 and partition coefficient for this tissue type are required for calibration. The default
+values vary according to what tissue type you have selected - so the ones displayed above are
+appropriate for CSF. These can be modified as required.
 
 
