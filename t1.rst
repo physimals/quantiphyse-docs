@@ -19,7 +19,7 @@ as a comma separated list which must match the number of volumes in the data set
 
 Once loaded, the file will be added to the list:
 
-.. image:: screenshots/t1_multiple_fas_loaded.jpg
+.. image:: screenshots/t1_multiple_fas_loaded.png
 
 Loading muliple flip angle volumes
 ----------------------------------
