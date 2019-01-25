@@ -5,21 +5,6 @@ ASL Analysis Tab
 
 The analysis tab contains options for the model fitting part of the pipeline.
 
-White paper mode
-----------------
-
-'White paper mode' selects defaults and analysis methods to match the recommendations in 
-Alsop et al (2015) [1]_. Specifically this selects:
-
- - Voxelwise calibration
- - Arterial transit time of zero
-
-Override defaults
------------------
-
-The values given for arterial transit time, T1 and T1b are from the literature, but can
-be customized if required.
-
 Model fitting options
 ---------------------
 
@@ -86,6 +71,26 @@ each voxel (which will also be modelled as part of the fitting process).
 
 .. warn::
     Partial volume correction adds considerably to the pipeline run time!
+
+Override defaults
+-----------------
+
+The values given for arterial transit time, T1 and T1b are from the literature, but can
+be customized if required.
+
+White paper mode
+----------------
+
+'White paper mode' selects defaults and analysis methods to match the recommendations in 
+Alsop et al (2014) [1]_. Specifically this selects:
+
+ - Voxelwise calibration
+ - Arterial transit time of zero (fixed)
+ - T1 and T1b of 1.65s
+ - Fixed label duration
+ - No macrovascular component
+
+.. image:: screenshots/asl_analysis_wp.png
 
 References
 ----------

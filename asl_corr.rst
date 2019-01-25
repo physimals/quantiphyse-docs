@@ -18,7 +18,7 @@ and disable this option in the ASL processing.
 ENABLE volume selection
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-This uses the ENABLE method to remove ``bad`` volumes from the cASL
+This uses the ENABLE method to remove 'bad' volumes from the cASL
 data to improve overall quality. This can be useful if there are a small number of volumes
 with, for example, major motion artifacts.
 
