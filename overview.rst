@@ -3,25 +3,30 @@ Overview
 
 Quantiphyse is a visual tool for quantitative analysis of medical images. The aim is to bring
 advanced analysis tools to users via an easy-to-use interface rather than focusing on the 
-visualisation features themselves. The software is also designed to support advanced usage via
+visualisation features themselves. 
+
+The software is also designed to support advanced usage via
 non-GUI batch processing and direct interaction with the Python code.
 
 Quantiphyse works with two types of data:
 
  - 3D / 4D data sets. 
  
- - Regions of interest (ROIs). These must be 3D and contain integer data only. Voxels with the value zero are taken to be outside the 
-   region of interest, nonzero values are inside. ROIs with more than one nonzero value describe multi-level regions of interest which
+ - Regions of interest (ROIs). These must be 3D and contain integer data only. Voxels with the value 
+   zero are taken to be outside the region of interest, nonzero values are inside. ROIs with more 
+   than one nonzero value describe multi-level regions of interest which
    are handled by some of the tools.
 
-One data set is used as the main data. This defaults to the first 4D data to be loaded, or the first data to be loaded,
-however you can set any data set to be the main volume.
+One data set is used as the main data. This defaults to the first 4D data to be loaded, or the first 
+data to be loaded, however you can set any data set to be the main volume. Data which should be
+treated as an ROI is normally identified when it is loaded (or created by a processing widget),
+however this can be changed after the data is loaded if it is incorrect.
 
 Data orientation
 ----------------
 
-Quantiphyse keeps all data loaded from files in its original order and orientation. For display purposes, it takes 
-the following steps to display data consistently:
+Quantiphyse keeps all data loaded from files in its original order and orientation. For display
+purposes, it takes the following steps to display data consistently:
 
  - A display grid is derived from the grid on which the main data is defined. This is done by flipping and transposing
    axes only so the resulting grid is in approximate RAS orientation. This is the *display grid* and ensures that the
