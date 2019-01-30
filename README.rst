@@ -39,11 +39,6 @@ License
 Quantiphyse is available free under an academic (non-commercial) license. See the `OUI Software 
 Store <https://process.innovation.ox.ac.uk/software>`_ for more details
 
-Bugs/Issues
------------
-
-Please report bug, issues, feature requests or other comments to the  `current maintainer: <mailto:martin.craig@eng.ox.ac.uk>`_
-
 BCISMRM CEST tutorial
 ---------------------
 
@@ -59,17 +54,16 @@ Basic functions
    :maxdepth: 2
 
    overview
-   load_save
-   interaction
+   getting_started
    overlay_stats
+   modelfit
    
 Generic analysis and processing tools
-===============
+=====================================
 
 .. toctree::
    :maxdepth: 1
 
-   modelfit
    compare
    curve_compare
    simple_maths
@@ -104,7 +98,13 @@ Advanced Tools
    console
    nifti_extension
    
+Bugs/Issues
+-----------
+
+Please report bug, issues, feature requests or other comments to the  `current maintainer: <mailto:martin.craig@eng.ox.ac.uk>`_
+
 Contributors
+------------
 
  - `Martin Craig <mailto:martin.craig@eng.ox.ac.uk>`_ (Current maintainer)
  - `Ben Irving <mailto:mail@birving.com>`_ (Original author)
@@ -112,6 +112,7 @@ Contributors
  - Paula Croal
 
 Acknowledgements
+----------------
 
  - Julia Schnabel
  - Sir Mike Brady

@@ -135,13 +135,10 @@ in this data, so enter ``1.8`` in the ``PLDs`` entry box.
 In this section we invert the kinetics of the ASL label delivery to fit a perfusion image, and 
 use the calibration image to get perfusion values in the units of ml/100g/min.
 
-We will need to load a couple of additional data files in the same way as we loaded the
+We will need to load the calibration image data file in the same way as we loaded the
 ASL data:
 
- - ``aslcalib.nii.gz`` - this is the calibration (M0) image
- - ``aslcalib_PA.nii.gz`` - this is a 'blipped' calibration image - identical to ``aslcalib``
-   apart from the use of posterior-anterior phase encoding (anterior-posterior was used in the 
-   rest of the ASL data). This is provided for distortion correction.
+ - ``aslcalib.nii.gz`` - Calibration (M0) image
 
 On the ``Corrections`` tab, we will uncheck ``Motion Correction`` which is enabled by default:
 
@@ -177,15 +174,16 @@ While you are waiting
 you can read ahead and even start changing the options in the GUI ready for the next analysis that 
 we want to run.
 
-Once the analysis had completed, some new data items will be available in the ``Overlay`` menu
-below the image display:
+Once the analysis had completed, some new data items will be available. You can display them either
+by selecting them from the ``Overlay`` menu below the image display, or by clicking on the
+``Volumes`` widget and selecting them from the list. The new data items are:
 
  - ``perfusion_native`` - Raw (uncalibrated) perfusion map 
  - ``perfusion_calib_native`` - Calibrated perfusion data in ml/100g/min
  - ``mask_native`` - An ROI (which appears in the ROI selector under the image view) which represents
    the region in which the analysis was performed.
 
-The images may be clearer if we modify the view style for the mask from ``Shaded`` to ``Contour``
+The images may be clearer if we modify the view style for the ROI from ``Shaded`` to ``Contour``
 (in the ROI options box underneath the image view). This replaces the translucent red mask with
 an outline: 
 
@@ -207,6 +205,12 @@ exploring more of the features of the GUI including things like motion and disto
 Motion and Distortion correction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+First we need to load an additional data file:
+
+ - ``aslcalib_PA.nii.gz`` - this is a 'blipped' calibration image - identical to ``aslcalib``
+   apart from the use of posterior-anterior phase encoding (anterior-posterior was used in the 
+   rest of the ASL data). This is provided for distortion correction.
+
 Go back to the GUI which should still be setup from the last analysis you did.
 
 On the ``Corrections`` tab, we will check ``Motion Correction``to enable it, and 
@@ -214,7 +218,7 @@ and click on the ``Distortion Correction`` checkbox to show distortion correctio
 We select the distortion correction method as ``Phase-encoding reversed calibration``, select 
 ``y`` as the phase encoding direction, and ``0.95`` as the echo spacing in ms (also known as the 
 dwell time). Finally we need to select the phase-encode reversed image as ``aslcalib_PA`` which 
-we should have just loaded:
+we have just loaded:
 
 .. image:: screenshots/asl_tutorial_corr_spld.png
 
